@@ -9,7 +9,7 @@ import styles from "./main.module.css";
 export default function() {
   return (
     <div className={styles["vertical-center"]}>
-      <div className={styles["inner-container"]}>
+      <div className="container">
         <center>
           <img className={styles.katana} src={katanaImg} alt="katana" />
         </center>
