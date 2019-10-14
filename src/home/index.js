@@ -7,39 +7,37 @@ import vsImg from "./assets/visual-studio.svg";
 
 export default function() {
   return (
-    <div className="container-fluid">
-      <div className="row vertical-center">
-        <div className="col-xs-4 col-md-4">
-          <div className={`${styles["main-logo"]}`}>
-            <img src={vsCodeImg} alt="..." />
-            <div className="caption">
-              <center>
-                <h3>Discover ancient secrets of VS Code</h3>
-              </center>
-            </div>
-          </div>
-        </div>
-        <div className="col-xs-4 col-md-4">
-          <div className="thumbnail text-center main-logo">
-            <img src={vsImg} alt="..." />
-            <div className="caption">
-              <center>
-                <h3>Become Visual Studio Bonjwa</h3>
-              </center>
-            </div>
-          </div>
-        </div>
-        <div className="col-xs-4 col-md-4">
-          <div className="thumbnail main-logo">
-            <img src={intellijImg} alt="..." />
+    <div className={`row align-items-center ${styles["vertical-center"]}`}>
+      <div className="col-4 text-center">
+        <figure className={`${styles["main-logo"]} figure`}>
+          <img src={vsCodeImg} alt="..." className="img-fluid figure-img" />
+          <figcaption class="figure-caption">
+            <center>
+              <h3>Discover ancient secrets of VS Code</h3>
+            </center>
+          </figcaption>
+        </figure>
+      </div>
+      <div className="col-4 text-center">
+        <figure className={`${styles["main-logo"]} figure`}>
+          <img src={vsImg} alt="..." className="img-fluid figure-img" />
+          <figcaption class="figure-caption">
+            <center>
+              <h3>Become Visual Studio Bonjwa</h3>
+            </center>
+          </figcaption>
+        </figure>
+      </div>
+      <div className="col-4 text-center">
+        <figure className={`${styles["main-logo"]} figure`}>
+          <img src={intellijImg} alt="..." className="img-fluid figure-img" />
 
-            <div className="caption">
-              <center>
-                <h3> Aquire power of Intellijitsu</h3>
-              </center>
-            </div>
-          </div>
-        </div>
+          <figcaption class="figure-caption">
+            <center>
+              <h3> Aquire power of Intellijitsu</h3>
+            </center>
+          </figcaption>
+        </figure>
       </div>
     </div>
   );
