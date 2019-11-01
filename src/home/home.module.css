@@ -1,12 +1,17 @@
 .main-logo {
-  border-color: transparent;
+  border-color: transparent !important;
+  border: 2px solid;
+  border-radius: 4px;
   width: 60%;
   padding: 15px;
   margin: auto auto;
+  transition: border 1s;
+  text-decoration: none;
 }
 
 .main-logo:hover {
   text-decoration: none;
+  border-color: #0ce3ac !important;
 }
 
 .vertical-center {

@@ -1,10 +1,9 @@
 import React from "react";
-import "react-router-dom";
 
-import Home from "home";
 import katanaImg from "./assets/katana.svg";
 import flipKatanaImg from "./assets/katana-flip.svg";
 import styles from "./main.module.css";
+import Router from "./Router";
 
 export default function() {
   return (
@@ -14,7 +13,7 @@ export default function() {
           <img className={styles.katana} src={katanaImg} alt="katana" />
         </center>
         <div className="container">
-          <Home />
+          <Router />
         </div>
         <center>
           <img className={styles.katana} src={flipKatanaImg} alt="katana" />
