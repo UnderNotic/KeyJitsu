@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import styles from "./home.module.css";
+import styles from "./home.module.scss";
 import intellijImg from "./assets/intellij.svg";
 import vsCodeImg from "./assets/visual-studio-code.svg";
 import vsImg from "./assets/visual-studio.svg";
@@ -16,7 +16,7 @@ export default function() {
             <figcaption class="figure-caption">
               <h4>Discover ancient secrets of VS Code</h4>
             </figcaption>
-          </figure>
+          </figure> 
         </Link>
       </div>
       <div className="col-4 text-center">

@@ -1,24 +1,16 @@
 import React from "react";
 
-import katanaImg from "./assets/katana.svg";
-import flipKatanaImg from "./assets/katana-flip.svg";
-import styles from "./main.module.css";
+import styles from "./main.module.scss";
 import Router from "./Router";
+import katanaImg from "common/assets/katana.png";
 
 export default function() {
   return (
-    <div className={styles["vertical-center"]}>
-      <div className="container">
-        <center>
-          <img className={styles.katana} src={katanaImg} alt="katana" />
-        </center>
-        <div className="container">
-          <Router />
-        </div>
-        <center>
-          <img className={styles.katana} src={flipKatanaImg} alt="katana" />
-        </center>
+    <div className="container">
+      <div className="text-center">
+        <img className={styles.katana} src={katanaImg} alt="katana" />
       </div>
+      <Router />
     </div>
   );
 }
