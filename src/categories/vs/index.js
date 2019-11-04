@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./resharper.module.scss";
 import vsImg from "home/assets/visual-studio.svg";
-import Panels from "../Panels";
+import Panels from "..";
 import list from "./list";
 
 export default function() {

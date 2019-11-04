@@ -1,8 +1,16 @@
-.panel-item{
-    background-color: #222;
+.panel-item {
+  background-color: #222;
 }
 
-.panel-item:hover{
-    color: #00bc8c;
-    cursor: pointer;
+.panel-item-active {
+  color: #20c997;
 }
+
+.panel-item:hover {
+  color: #20c997;
+  cursor: pointer;
+}
+
+.panel-item-active:hover {
+    color: #E74C3C;
+  }

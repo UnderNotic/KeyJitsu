@@ -1,5 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import styles from "./panels.module.scss";
+import decodeCategories from "./decodeCategories";
 
-export default function() {
-  return <></>;
+export default function({ categoriesList }) {
+  const [chosenCategories, setChosenCategories] = useState([]);
+  const decodedCategories = decodeCategories(chosenCategories);
+  const list = categoriesList.map((c, i) => (
+    <li
+      onClick={() => {
+        const found = chosenCategories.findIndex(ch => ch.value === c);
+        if (found !== -1) {
+          chosenCategories.splice(found, 1);
+          setChosenCategories([...chosenCategories]);
+        } else {
+          setChosenCategories([...chosenCategories, { value: c, i }]);
+        }
+      }}
+      className={`list-group-item ${styles["panel-item"]} ${
+        chosenCategories.find(ch => ch.value === c)
+          ? styles["panel-item-active"]
+          : ""
+      }`}
+    >
+      {c}
+    </li>
+  ));
+
+  return (
+    <>
+      <div className="row justify-content-center">
+        <div className="col-10">
+          <h4>
+            Choose category
+            <button type="button" className="btn btn-info float-right">
+              Select all
+            </button>
+          </h4>
+          <hr />
+        </div>
+      </div>
+
+      <div className="row justify-content-center">
+        <div className="col-4" style={{ padding: "0px" }}>
+          <ul className="list-group list-group-flush">
+            {list.slice(0, list.length / 2)}
+          </ul>
+        </div>
+
+        <div className="col-4" style={{ padding: "0px" }}>
+          <ul className="list-group list-group-flush ">
+            {list.slice(list.length / 2)}
+          </ul>
+        </div>
+        <div className="col-10">
+          <button type="button" className="btn btn-secondary float-left">
+            Ran away
+          </button>
+          <button type="button" className="btn btn-success btn-lg float-right">
+            Fight {decodedCategories}
+          </button>
+        </div>
+      </div>
+    </>
+  );
 }
