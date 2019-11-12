@@ -70,6 +70,7 @@ export default function({ categoriesList }) {
           </ul>
         </div>
         <div className="col-10">
+          <hr />
           <button type="button" className="btn btn-secondary float-left">
             Ran away
           </button>
