@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import styles from "./panels.module.scss";
-import decodeCategories from "./decodeCategories";
+import encodeCategories from "./encodeCategories";
 
 export default function({ categoriesList }) {
   const [chosenCategories, setChosenCategories] = useState([]);
-  const decodedCategories = decodeCategories(chosenCategories);
+
+  const decodedCategories = encodeCategories(chosenCategories);
   const list = categoriesList.map((c, i) => (
     <li
       onClick={() => {
