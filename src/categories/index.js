@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import styles from "./panels.module.scss";
 import encodeCategories from "./encodeCategories";
 
@@ -8,6 +9,7 @@ export default function({ categoriesList }) {
   const decodedCategories = encodeCategories(chosenCategories);
   const list = categoriesList.map((c, i) => (
     <li
+      key={i}
       onClick={() => {
         const found = chosenCategories.findIndex(ch => ch.value === c);
         if (found !== -1) {
@@ -33,8 +35,22 @@ export default function({ categoriesList }) {
         <div className="col-10">
           <h4>
             Choose category
-            <button type="button" className="btn btn-info float-right">
-              Select all
+            <button
+              type="button"
+              className="btn btn-info float-right"
+              onClick={() => {
+                if (categoriesList.length === chosenCategories.length) {
+                  setChosenCategories([]);
+                } else {
+                  setChosenCategories(
+                    categoriesList.map((c, i) => ({ value: c, i }))
+                  );
+                }
+              }}
+            >
+              {categoriesList.length === chosenCategories.length
+                ? "Deselect all"
+                : "Select all"}
             </button>
           </h4>
           <hr />
@@ -57,9 +73,16 @@ export default function({ categoriesList }) {
           <button type="button" className="btn btn-secondary float-left">
             Ran away
           </button>
-          <button type="button" className="btn btn-success btn-lg float-right">
-            Fight {decodedCategories}
-          </button>
+          {decodedCategories === 0 ? null : (
+            <Link to={`game/${decodedCategories}`}>
+              <button
+                type="button"
+                className="btn btn-success btn-lg float-right"
+              >
+                Fight
+              </button>
+            </Link>
+          )}
         </div>
       </div>
     </>
