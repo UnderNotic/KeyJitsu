@@ -8,7 +8,7 @@ import vsImg from "./assets/visual-studio.svg";
 
 export default function() {
   return (
-    <div className={`row align-items-center ${styles["vertical-center"]}`}>
+    <div className="row align-items-center">
       <div className="col-4 text-center">
         <Link to="/vscode">
           <figure className={`${styles["main-logo"]} figure`}>
@@ -16,7 +16,7 @@ export default function() {
             <figcaption class="figure-caption">
               <h4>Discover ancient secrets of VS Code</h4>
             </figcaption>
-          </figure> 
+          </figure>
         </Link>
       </div>
       <div className="col-4 text-center">

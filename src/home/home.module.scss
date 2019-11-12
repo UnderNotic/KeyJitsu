@@ -13,11 +13,3 @@
   text-decoration: none;
   border-color: #0ce3ac !important;
 }
-
-.vertical-center {
-  min-height: 55%; /* Fallback for browsers do NOT support vh unit */
-  min-height: 55vh;
-
-  display: flex;
-  align-items: center;
-}
