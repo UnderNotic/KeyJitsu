@@ -10,7 +10,11 @@ export default function() {
       <div className="text-center">
         <img className={styles.katana} src={katanaImg} alt="katana" />
       </div>
-      <Router />
+      <div className="row justify-content-center">
+        <div className="col-xl-9 col-lg-10">
+          <Router />
+        </div>
+      </div>
     </div>
   );
 }

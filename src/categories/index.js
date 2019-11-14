@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 import styles from "./panels.module.scss";
 import encodeCategories from "./encodeCategories";
 
 export default function({ categoriesList }) {
   const [chosenCategories, setChosenCategories] = useState([]);
-
   const decodedCategories = encodeCategories(chosenCategories);
   const list = categoriesList.map((c, i) => (
     <li
@@ -31,8 +30,8 @@ export default function({ categoriesList }) {
 
   return (
     <>
-      <div className="row justify-content-center">
-        <div className="col-10">
+      <div className="row">
+        <div className="col-12">
           <h4>
             Choose category
             <button
@@ -58,24 +57,23 @@ export default function({ categoriesList }) {
       </div>
 
       <div className="row justify-content-center">
-        <div className="col-4" style={{ padding: "0px" }}>
+        <div className="col-5" style={{ padding: "0px" }}>
           <ul className="list-group list-group-flush">
             {list.slice(0, list.length / 2)}
           </ul>
         </div>
-
-        <div className="col-4" style={{ padding: "0px" }}>
-          <ul className="list-group list-group-flush ">
+        <div className="col-5" style={{ padding: "0px" }}>
+          <ul className="list-group list-group-flush">
             {list.slice(list.length / 2)}
           </ul>
         </div>
-        <div className="col-10">
+        <div className="col-12">
           <hr />
           <button type="button" className="btn btn-secondary float-left">
             Ran away
           </button>
           {decodedCategories === 0 ? null : (
-            <Link to={`game/${decodedCategories}`}>
+            <Link to={`${useRouteMatch().path}/game/${decodedCategories}`}>
               <button
                 type="button"
                 className="btn btn-success btn-lg float-right"
