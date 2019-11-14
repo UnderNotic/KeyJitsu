@@ -27,6 +27,7 @@ export default function({ categoriesList }) {
       {c}
     </li>
   ));
+  const relPath = useRouteMatch().path;
 
   return (
     <>
@@ -69,11 +70,13 @@ export default function({ categoriesList }) {
         </div>
         <div className="col-12">
           <hr />
-          <button type="button" className="btn btn-secondary float-left">
-            Ran away
-          </button>
+          <Link to="">
+            <button type="button" className="btn btn-secondary float-left">
+              Ran away
+            </button>
+          </Link>
           {decodedCategories === 0 ? null : (
-            <Link to={`${useRouteMatch().path}/game/${decodedCategories}`}>
+            <Link to={`${relPath}/game/${decodedCategories}`}>
               <button
                 type="button"
                 className="btn btn-success btn-lg float-right"
