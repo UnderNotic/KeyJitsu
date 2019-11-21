@@ -1,7 +1,7 @@
 import React from "react";
 import Panels from "..";
-import list from "./list";
+import hotkeys from "./hotkeys";
 
 export default function() {
-  return <Panels categoriesList={list} />;
+  return <Panels categoriesList={Object.keys(hotkeys)} />;
 }

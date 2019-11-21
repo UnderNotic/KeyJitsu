@@ -1,7 +1,7 @@
-export default function decodeCategories(decodedEnumInt, categoiesList) {
+export default function decodeCategories(encodedInt) {
   let i = 0;
   const arr = [0];
-  while (arr[arr.length - 1] <= decodedEnumInt) {
+  while (arr[arr.length - 1] <= encodedInt) {
     arr.push(Math.pow(2, i++));
   }
   arr.pop();
@@ -10,12 +10,12 @@ export default function decodeCategories(decodedEnumInt, categoiesList) {
   const res = [];
 
   for (let item of arr.reverse()) {
-    if (aggr + item <= decodedEnumInt) {
+    if (aggr + item <= encodedInt) {
       aggr += item;
-      res.push(item);
+      res.push(Math.log2(item));
     }
 
-    if (aggr === decodedEnumInt) {
+    if (aggr === encodedInt) {
       return res;
     }
   }

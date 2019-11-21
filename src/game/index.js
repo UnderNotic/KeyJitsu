@@ -1,19 +1,48 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import decodeCategories from "categories/decodeCategories";
+import ShortcutPicker from "./RandomShortcutPicker";
+import HotkeyRegistry from "./HotkeyRegistry";
 
-export default function() {
+let shortcutPicker;
+let hotkeyRegistry;
+
+export default function({ shortcuts }) {
   const { encodedCategories } = useParams();
-  const decodedCategories = decodeCategories(encodedCategories);
+  const decodedCategoriesIndeces = decodeCategories(
+    parseInt(encodedCategories)
+  );
+  const [shortcut, setShortcut] = useState(null);
+
+  useEffect(() => {
+    hotkeyRegistry = new HotkeyRegistry();
+
+    return function cleanup() {
+      hotkeyRegistry.dispose();
+    };
+  }, []);
+
+  useEffect(() => {
+    shortcutPicker = new ShortcutPicker(decodedCategoriesIndeces, shortcuts);
+    setShortcut(shortcutPicker.pickShortcut());
+  }, [decodedCategoriesIndeces, shortcuts]);
+
+  useEffect(() => {
+    if (shortcut) {
+      hotkeyRegistry.listenFor(shortcut.value, isHit => {
+        console.log(isHit);
+      });
+    }
+  }, [shortcut]);
 
   return (
     <>
       <div className="row">
         <div className="col-12">
           <hr />
-          <h2 className="text-center">Navigate to implemantation</h2>
+          <h2 className="text-center">{shortcut ? shortcut.name : ""}</h2>
 
           <div className="progress">
             <div

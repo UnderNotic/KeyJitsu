@@ -5,6 +5,7 @@ import VsCode from "categories/vscode";
 import Vs from "categories/vs";
 import VsHeader from "common/components/headers/vs";
 import Game from "game";
+import vsShortcuts from "categories/vs/hotkeys.json";
 
 export default function() {
   return (
@@ -16,7 +17,11 @@ export default function() {
         <Route path="/vs">
           <VsHeader />
           <Route exact path="/vs" children={<Vs />} />
-          <Route exact path="/vs/game/:encodedCategories" children={<Game />} />
+          <Route
+            exact
+            path="/vs/game/:encodedCategories"
+            children={<Game shortcuts={vsShortcuts} />}
+          />
         </Route>
         <Route path="/resharper">
           <Game />
