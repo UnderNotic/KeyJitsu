@@ -1,5 +1,10 @@
 {
-  "Build": [{ "name": "Build solution", "value": ["ctrl+shift+b"] }],
+  "Build": [
+    { "name": "Build solution", "value": ["ctrl+shift+b"] },
+    { "name": "Build selection", "value": ["ctrl+b"] },
+    { "name": "Build cancel", "value": ["ctrl+break"] },
+    { "name": "Build compile", "value": ["ctrl+f7"] }
+  ],
   "Basic editing": [],
   "Search and replace": [],
   "Multi-cursor and selection": [],

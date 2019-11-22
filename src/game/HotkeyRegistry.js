@@ -6,8 +6,8 @@ export default class HotkeyRegistry {
     hotkeys("*", { keyup: false, keydown: true }, (event, handler) => {
       event.preventDefault();
 
+      let pressed = hotkeys.getPressedKeyCodes();
       const isShortcutHitCompletely = this.shortcutsToListen.some(s => {
-        let pressed = hotkeys.getPressedKeyCodes();
         if (s.length !== pressed.length) {
           return false;
         }
@@ -17,9 +17,7 @@ export default class HotkeyRegistry {
       });
 
       const isShortcutHit = this.shortcutsToListen.some(s =>
-        s.some(k => {
-          return hotkeys.isPressed(k);
-        })
+        pressed.every(p => s.includes(keycode(p)))
       );
 
       if (!isShortcutHit) {
