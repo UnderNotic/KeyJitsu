@@ -6,8 +6,7 @@ import { historyLength } from "./consts";
 import decodeCategories from "categories/decodeCategories";
 import ShortcutPicker from "./RandomShortcutPicker";
 import HotkeyRegistry from "./HotkeyRegistry";
-import ProgressBar from "./ProgressBar";
-import { fail } from "assert";
+import ProgressBar from "./progress/ProgressBar";
 
 let shortcutPicker;
 let hotkeyRegistry;
@@ -83,7 +82,6 @@ export default function({ shortcuts }) {
 
       <div className="row">
         <div className="col-12">
-          <hr />
           <ul className="list-group">
             {history.map((h, i) => (
               <li
@@ -95,7 +93,10 @@ export default function({ shortcuts }) {
                 }`}
               >
                 {h.shortcut.name}
-                <span className="float-right">{h.shortcut.value}</span>
+
+                <span className="float-right">
+                  <kbd>{h.shortcut.value}</kbd>
+                </span>
               </li>
             ))}
           </ul>

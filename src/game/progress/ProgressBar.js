@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./progress.module.scss";
 
 export default ({ successCount, failCount }) => {
   const successRatio =
@@ -7,7 +8,7 @@ export default ({ successCount, failCount }) => {
   const fail = 100 - success;
 
   return (
-    <div className="progress">
+    <div className={`progress ${styles["progress"]}`}>
       <div
         className="progress-bar bg-success"
         role="progressbar"

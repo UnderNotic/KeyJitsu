@@ -1,12 +1,27 @@
 import hotkeys from "hotkeys-js";
 import keycode from "keycode";
 
+let lastPressedKeyCodes;
+
 export default class HotkeyRegistry {
   constructor() {
-    hotkeys("*", { keyup: false, keydown: true }, (event, handler) => {
+    hotkeys("*", { keyup: true, keydown: false }, () => {
+      lastPressedKeyCodes = null;
+    });
+
+    hotkeys("*", { keyup: false, keydown: true }, event => {
       event.preventDefault();
 
       let pressed = hotkeys.getPressedKeyCodes();
+      if (
+        lastPressedKeyCodes &&
+        lastPressedKeyCodes.length === pressed.length &&
+        lastPressedKeyCodes.every(p => pressed.includes(p))
+      ) {
+        return false;
+      }
+      lastPressedKeyCodes = pressed;
+
       const isShortcutHitCompletely = this.shortcutsToListen.some(s => {
         if (s.length !== pressed.length) {
           return false;
