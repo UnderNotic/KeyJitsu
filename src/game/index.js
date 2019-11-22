@@ -7,6 +7,7 @@ import decodeCategories from "categories/decodeCategories";
 import ShortcutPicker from "./RandomShortcutPicker";
 import HotkeyRegistry from "./HotkeyRegistry";
 import ProgressBar from "./progress/ProgressBar";
+import ExcludedListModal from "./excludedModal/ExcludedModal";
 
 let shortcutPicker;
 let hotkeyRegistry;
@@ -110,6 +111,17 @@ export default function({ shortcuts }) {
               I'm done
             </button>
           </Link>
+          <ExcludedListModal
+            body={
+              <ul className="list-group">
+                <li className="list-group-item">Cras justo odio</li>
+                <li className="list-group-item">Dapibus ac facilisis in</li>
+                <li className="list-group-item">Morbi leo risus</li>
+                <li className="list-group-item">Porta ac consectetur ac</li>
+                <li className="list-group-item">Vestibulum at eros</li>
+              </ul>
+            }
+          />
           <button
             onClick={resetGame}
             type="button"
