@@ -1,4 +1,5 @@
 import React from "react";
+import ReactTooltip from "react-tooltip";
 
 import styles from "./main.module.scss";
 import Router from "./Router";
@@ -12,6 +13,7 @@ export default function() {
       </div>
       <div className="row justify-content-center">
         <div className="col-xl-9 col-lg-10">
+          <ReactTooltip place="right" />
           <Router />
         </div>
       </div>

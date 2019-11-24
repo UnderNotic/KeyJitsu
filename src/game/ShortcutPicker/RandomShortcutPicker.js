@@ -1,10 +1,13 @@
-import { historyLength } from "./consts";
+import { historyLength } from "../consts";
 
 export default class RandomShortcutPicker {
   constructor(categoriesIndices, hotkeysJson) {
     this.hotkeys = categoriesIndices.reduce((array, value) => {
       var categoryName = Object.keys(hotkeysJson)[value];
-      var hotkeysArr = hotkeysJson[categoryName];
+      var hotkeysArr = hotkeysJson[categoryName].map(h => ({
+        ...h,
+        categoryName
+      }));
 
       return [...array, ...hotkeysArr];
     }, []);
@@ -12,11 +15,14 @@ export default class RandomShortcutPicker {
     this.history = [];
   }
 
-  pickShortcut() {
+  pickShortcut(excludedList) {
     var index = this.generateRandomShortcutIndex();
     while (
-      this.hotkeys.length > historyLength &&
-      this.history.includes(index)
+      this.hotkeys.length > excludedList.length + historyLength
+        ? (this.hotkeys.length > historyLength &&
+            this.history.includes(index)) ||
+          excludedList.includes(this.hotkeys[index].name)
+        : this.hotkeys.length > historyLength && this.history.includes(index)
     ) {
       index = this.generateRandomShortcutIndex();
     }

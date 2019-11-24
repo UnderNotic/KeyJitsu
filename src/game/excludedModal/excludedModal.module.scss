@@ -12,9 +12,17 @@
   background: transparent;
   width: 30%;
   height: auto;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.card-body {
+  max-height: 400px;
+}
+
+.card-item {
+  cursor: pointer;
 }
 
 .display-block {

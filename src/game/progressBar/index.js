@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./progress.module.scss";
+import styles from "./progressBar.module.scss";
 
 export default ({ successCount, failCount }) => {
   const successRatio =

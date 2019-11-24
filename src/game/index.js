@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 
 import { historyLength } from "./consts";
 import decodeCategories from "categories/decodeCategories";
-import ShortcutPicker from "./RandomShortcutPicker";
-import HotkeyRegistry from "./HotkeyRegistry";
-import ProgressBar from "./progress/ProgressBar";
-import ExcludedListModal from "./excludedModal/ExcludedModal";
+import ShortcutPicker from "./ShortcutPicker/RandomShortcutPicker";
+import HotkeyRegistry from "./HotkeyRegistry/HotkeyRegistry";
+import ProgressBar from "./progressBar";
+import ExcludedListModal from "./excludedModal";
+
+import History from "./history";
 
 let shortcutPicker;
 let hotkeyRegistry;
@@ -19,6 +21,7 @@ export default function({ shortcuts }) {
   );
   const [shortcut, setShortcut] = useState(null);
   const [history, setHistory] = useState([]);
+  const [excludedList, setExcludedList] = useState([]); //use local storage
   const [successCount, setSuccessCount] = useState(0);
   const [failCount, setFailCount] = useState(0);
 
@@ -58,7 +61,7 @@ export default function({ shortcuts }) {
   }, [shortcut]);
 
   function pickNewShortcut() {
-    setShortcut(shortcutPicker.pickShortcut());
+    setShortcut(shortcutPicker.pickShortcut(excludedList));
   }
 
   function resetGame() {
@@ -83,24 +86,12 @@ export default function({ shortcuts }) {
 
       <div className="row">
         <div className="col-12">
-          <ul className="list-group">
-            {history.map((h, i) => (
-              <li
-                key={i}
-                className={`list-group-item ${
-                  h.isHit
-                    ? "list-group-item-success"
-                    : " list-group-item-danger"
-                }`}
-              >
-                {h.shortcut.name}
-
-                <span className="float-right">
-                  <kbd>{h.shortcut.value}</kbd>
-                </span>
-              </li>
-            ))}
-          </ul>
+          <History
+            historyItems={history}
+            exclude={toExclude =>
+              setExcludedList([...new Set([...excludedList, toExclude])])
+            }
+          />
         </div>
       </div>
       <hr />
@@ -111,17 +102,14 @@ export default function({ shortcuts }) {
               I'm done
             </button>
           </Link>
-          <ExcludedListModal
-            body={
-              <ul className="list-group">
-                <li className="list-group-item">Cras justo odio</li>
-                <li className="list-group-item">Dapibus ac facilisis in</li>
-                <li className="list-group-item">Morbi leo risus</li>
-                <li className="list-group-item">Porta ac consectetur ac</li>
-                <li className="list-group-item">Vestibulum at eros</li>
-              </ul>
-            }
-          />
+          {excludedList.length === 0 ? null : (
+            <ExcludedListModal
+              excludedList={excludedList}
+              removeFromExclude={toBeRemoved =>
+                setExcludedList(excludedList.filter(e => e !== toBeRemoved))
+              }
+            />
+          )}
           <button
             onClick={resetGame}
             type="button"
