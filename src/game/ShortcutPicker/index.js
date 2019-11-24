@@ -1,4 +1,5 @@
-import { historyLength } from "../consts";
+import { maxHistoryLength } from "../consts";
+import { ShouldRepick } from "./RepickPolicy";
 
 export default class RandomShortcutPicker {
   constructor(categoriesIndices, hotkeysJson) {
@@ -18,11 +19,13 @@ export default class RandomShortcutPicker {
   pickShortcut(excludedList) {
     var index = this.generateRandomShortcutIndex();
     while (
-      this.hotkeys.length > excludedList.length + historyLength
-        ? (this.hotkeys.length > historyLength &&
-            this.history.includes(index)) ||
-          excludedList.includes(this.hotkeys[index].name)
-        : this.hotkeys.length > historyLength && this.history.includes(index)
+      ShouldRepick(
+        this.hotkeys,
+        this.history,
+        excludedList,
+        maxHistoryLength,
+        index
+      )
     ) {
       index = this.generateRandomShortcutIndex();
     }
@@ -33,7 +36,7 @@ export default class RandomShortcutPicker {
   }
 
   pushToHistory(index) {
-    if (this.history.length === historyLength) {
+    if (this.history.length === maxHistoryLength) {
       this.history.shift();
     }
     this.history.push(index);

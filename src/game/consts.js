@@ -1,1 +1,1 @@
-export var historyLength = 3;
+export var maxHistoryLength = 3;

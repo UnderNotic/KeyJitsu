@@ -4,23 +4,23 @@ import ReactTooltip from "react-tooltip";
 
 export default function({ excludedList, removeFromExclude }) {
   const [show, setShow] = useState(false);
-
   return (
-    <main>
+    <span>
       <Modal show={show}>
         <div className="card">
-          <div class="card-header">Exclusion</div>
+          <div className="card-header">Exclusion</div>
           <div className={`card-body overflow-auto ${styles["card-body"]}`}>
             <ReactTooltip place="right" />
             <ul className="list-group" data-tip="Remove">
-              {excludedList.map(n => (
+              {excludedList.map((s, i) => (
                 <li
-                  onClick={() => removeFromExclude(n)}
+                  key={i}
+                  onClick={() => removeFromExclude(s)}
                   className={`list-group-item list-group-item-action ${
                     styles["card-item"]
                   }`}
                 >
-                  {n}
+                  {s.name}
                 </li>
               ))}
             </ul>
@@ -42,7 +42,7 @@ export default function({ excludedList, removeFromExclude }) {
       >
         Show excluded list ({excludedList.length})
       </button>
-    </main>
+    </span>
   );
 }
 

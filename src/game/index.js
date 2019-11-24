@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import store from "store2";
 
-import { historyLength } from "./consts";
+import { maxHistoryLength } from "./consts";
 import decodeCategories from "categories/decodeCategories";
-import ShortcutPicker from "./ShortcutPicker/RandomShortcutPicker";
-import HotkeyRegistry from "./HotkeyRegistry/HotkeyRegistry";
+import ShortcutPicker from "./ShortcutPicker";
+import HotkeyRegistry from "./HotkeyRegistry";
 import ProgressBar from "./progressBar";
 import ExcludedListModal from "./excludedModal";
 
@@ -14,14 +15,17 @@ import History from "./history";
 let shortcutPicker;
 let hotkeyRegistry;
 
-export default function({ shortcuts }) {
+export default function({ shortcuts, excludedListStoreKey }) {
   const { encodedCategories } = useParams();
   const decodedCategoriesIndeces = decodeCategories(
     parseInt(encodedCategories)
   );
+
   const [shortcut, setShortcut] = useState(null);
   const [history, setHistory] = useState([]);
-  const [excludedList, setExcludedList] = useState([]); //use local storage
+  const [excludedList, setExcludedList] = useState(
+    store(excludedListStoreKey) || []
+  );
   const [successCount, setSuccessCount] = useState(0);
   const [failCount, setFailCount] = useState(0);
 
@@ -45,7 +49,7 @@ export default function({ shortcuts }) {
       setFailCount(failCount + 1);
     }
 
-    if (history.length === historyLength) {
+    if (history.length === maxHistoryLength) {
       history.pop();
     }
     setHistory([{ shortcut, isHit }, ...history]);
@@ -72,6 +76,23 @@ export default function({ shortcuts }) {
     pickNewShortcut();
   }
 
+  function setExcludedListWithStorage(excludedList) {
+    setExcludedList(excludedList);
+    store(excludedListStoreKey, excludedList);
+  }
+
+  const excludedFromChosenCategories = getExcludedFromChosenCategories();
+  console.log(excludedFromChosenCategories);
+  function getExcludedFromChosenCategories() {
+    return excludedList.filter(s => {
+      var x = decodedCategoriesIndeces.map(i => {
+        return Object.keys(shortcuts)[i];
+      });
+      // debugger;
+      return x.includes(s.categoryName);
+    });
+  }
+
   return (
     <>
       <div className="row">
@@ -89,7 +110,8 @@ export default function({ shortcuts }) {
           <History
             historyItems={history}
             exclude={toExclude =>
-              setExcludedList([...new Set([...excludedList, toExclude])])
+              excludedList.every(s => s.value !== toExclude.value) &&
+              setExcludedListWithStorage([...excludedList, toExclude])
             }
           />
         </div>
@@ -102,11 +124,13 @@ export default function({ shortcuts }) {
               I'm done
             </button>
           </Link>
-          {excludedList.length === 0 ? null : (
+          {excludedFromChosenCategories.length === 0 ? null : (
             <ExcludedListModal
-              excludedList={excludedList}
+              excludedList={excludedFromChosenCategories}
               removeFromExclude={toBeRemoved =>
-                setExcludedList(excludedList.filter(e => e !== toBeRemoved))
+                setExcludedListWithStorage(
+                  excludedList.filter(s => s.value !== toBeRemoved.value)
+                )
               }
             />
           )}

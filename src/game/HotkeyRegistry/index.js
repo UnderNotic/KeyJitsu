@@ -12,6 +12,10 @@ export default class HotkeyRegistry {
     hotkeys("*", { keyup: false, keydown: true }, event => {
       event.preventDefault();
 
+      if (!this.shortcutsToListen || !this.cb) {
+        return false;
+      }
+
       let pressed = hotkeys.getPressedKeyCodes();
       if (
         lastPressedKeyCodes &&

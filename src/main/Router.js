@@ -6,6 +6,7 @@ import Vs from "categories/vs";
 import VsHeader from "common/components/headers/vs";
 import Game from "game";
 import vsShortcuts from "categories/vs/hotkeys.json";
+import { VsExcludedListStoreKey } from "./consts";
 
 export default function() {
   return (
@@ -20,7 +21,12 @@ export default function() {
           <Route
             exact
             path="/vs/game/:encodedCategories"
-            children={<Game shortcuts={vsShortcuts} />}
+            children={
+              <Game
+                shortcuts={vsShortcuts}
+                excludedListStoreKey={VsExcludedListStoreKey}
+              />
+            }
           />
         </Route>
         <Route path="/resharper">
