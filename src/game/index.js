@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import store from "store2";
@@ -52,17 +52,16 @@ export default function({ shortcuts, excludedListStoreKey }) {
     if (history.length === maxHistoryLength) {
       history.pop();
     }
+
     setHistory([{ shortcut, isHit }, ...history]);
     pickNewShortcut();
   }
 
-  useEffect(() => {
-    if (shortcut) {
-      hotkeyRegistry.listenFor(shortcut.value, isHit => {
-        handleShortcutHit(isHit);
-      });
-    }
-  }, [shortcut]);
+  if (shortcut) {
+    hotkeyRegistry.listenFor(shortcut.value, isHit => {
+      handleShortcutHit(isHit);
+    });
+  }
 
   function pickNewShortcut() {
     setShortcut(shortcutPicker.pickShortcut(excludedList));
@@ -72,7 +71,6 @@ export default function({ shortcuts, excludedListStoreKey }) {
     setHistory([]);
     setSuccessCount(0);
     setFailCount(0);
-
     pickNewShortcut();
   }
 
@@ -82,13 +80,11 @@ export default function({ shortcuts, excludedListStoreKey }) {
   }
 
   const excludedFromChosenCategories = getExcludedFromChosenCategories();
-  console.log(excludedFromChosenCategories);
   function getExcludedFromChosenCategories() {
     return excludedList.filter(s => {
       var x = decodedCategoriesIndeces.map(i => {
         return Object.keys(shortcuts)[i];
       });
-      // debugger;
       return x.includes(s.categoryName);
     });
   }
