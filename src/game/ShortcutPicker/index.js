@@ -3,8 +3,8 @@ import { ShouldRepick } from "./RepickPolicy";
 
 export default class RandomShortcutPicker {
   constructor(categoriesIndices, hotkeysJson) {
-    this.hotkeys = categoriesIndices.reduce((array, value) => {
-      var categoryName = Object.keys(hotkeysJson)[value];
+    this.categories = categoriesIndices.map(c => Object.keys(hotkeysJson)[c]);
+    this.hotkeys = this.categories.reduce((array, categoryName) => {
       var hotkeysArr = hotkeysJson[categoryName].map(h => ({
         ...h,
         categoryName
@@ -18,11 +18,15 @@ export default class RandomShortcutPicker {
 
   pickShortcut(excludedList) {
     var index = this.generateRandomShortcutIndex();
+    var excludedListForCategories = excludedList.filter(i =>
+      this.categories.includes(i.categoryName)
+    );
+
     while (
       ShouldRepick(
         this.hotkeys,
         this.history,
-        excludedList,
+        excludedListForCategories,
         maxHistoryLength,
         index
       )
