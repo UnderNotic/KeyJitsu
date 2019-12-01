@@ -6,7 +6,8 @@ import store from "store2";
 import { maxHistoryLength } from "./consts";
 import decodeCategories from "categories/decodeCategories";
 import ShortcutPicker from "./ShortcutPicker";
-import HotkeyRegistry from "./HotkeyRegistry";
+import HotkeyCapture from "./hotkey/HotkeyCapture";
+import HotkeyRegistry from "./hotkey/HotkeyRegistry";
 import ProgressBar from "./progressBar";
 import ExcludedListModal from "./excludedModal";
 
@@ -14,6 +15,7 @@ import History from "./history";
 
 let shortcutPicker;
 let hotkeyRegistry;
+let hockeyCapture;
 
 export default function({ shortcuts, excludedListStoreKey }) {
   const { encodedCategories } = useParams();
@@ -31,9 +33,9 @@ export default function({ shortcuts, excludedListStoreKey }) {
 
   useEffect(() => {
     hotkeyRegistry = new HotkeyRegistry();
-
+    hockeyCapture = new HotkeyCapture(hotkeyRegistry);
     return function cleanup() {
-      hotkeyRegistry.dispose();
+      hockeyCapture.dispose();
     };
   }, []);
 
