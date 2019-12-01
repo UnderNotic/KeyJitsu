@@ -1,10 +1,35 @@
 {
   "Build": [
-    { "name": "Build solution", "value": ["ctrl+shift+b"] },
-    { "name": "Build selection", "value": ["ctrl+b"] },
-    { "name": "Build cancel", "value": ["ctrl+break"] },
-    { "name": "Build compile", "value": ["ctrl+f7"] },
-    { "name": "Build Run Code Analysis", "value": ["alt+f11"] }
+    {
+      "name": "Build solution",
+      "value": ["ctrl+shift+b"]
+    },
+    {
+      "name": "Build selection",
+      "value": ["ctrl+b"]
+    },
+    {
+      "name": "Build cancel",
+      "value": ["ctrl+break"]
+    },
+    {
+      "name": "Build compile",
+      "value": ["ctrl+f7"]
+    },
+    {
+      "name": "Build Run Code Analysis",
+      "value": ["alt+f11"]
+    }
+  ],
+  "Edit": [
+    {
+      "name": "Edit Next bookmark",
+      "value": ["ctrl+k"]
+    },
+    {
+      "name": "Edit Stop search",
+      "value": ["alt+f3 s"]
+    }
   ],
   "Basic editing": [],
   "Search and replace": [],
@@ -14,9 +39,18 @@
   "File management": [],
   "Display": [],
   "Debug": [
-    { "name": "Debug start", "value": ["f5"] },
-    { "name": "Step into", "value": ["f11"] },
-    { "name": "Step out", "value": ["shift+f11"] }
+    {
+      "name": "Debug start",
+      "value": ["f5"]
+    },
+    {
+      "name": "Step into",
+      "value": ["f11"]
+    },
+    {
+      "name": "Step out",
+      "value": ["shift+f11"]
+    }
   ],
   "Integrated terminal": []
 }

@@ -26,31 +26,53 @@ export default class HotkeyRegistry {
       }
       lastPressedKeyCodes = pressed;
 
+      let found;
       const isShortcutHitCompletely = this.shortcutsToListen.some(s => {
-        if (s.length !== pressed.length) {
+        const shortcut = s[0];
+        if (shortcut.length !== pressed.length) {
           return false;
         }
-        return s.every(k => {
+        const hit = shortcut.every(k => {
           return pressed.includes(keycode(k));
         });
+
+        hit && (found = s);
+
+        return hit;
       });
 
-      const isShortcutHit = this.shortcutsToListen.some(s =>
-        pressed.every(p => s.includes(keycode(p)))
-      );
+      const isShortcutHit = this.shortcutsToListen.some(s => {
+        const shortcut = s[0];
+        return pressed.every(p => shortcut.includes(keycode(p)));
+      });
 
       if (!isShortcutHit) {
         this.cb(false);
       } else if (isShortcutHitCompletely) {
-        this.cb(true);
+        if (found.length === 1) {
+          this.cb(true);
+        }
+        found.shift();
       }
 
       return false;
     });
   }
 
+  getPartOfShortcut(shortcut) {
+    return shortcut.split(" ")[0];
+  }
+
+  shortcutPartHit() {
+    const s = this.shortcutsToListen.split(" ");
+    s.shift();
+    this.shortcutsToListen = s.join(" ");
+  }
+
   listenFor(shortcut, cb) {
-    this.shortcutsToListen = shortcut.map(s => s.split("+"));
+    this.shortcutsToListen = shortcut.map(s =>
+      s.split(" ").map(p => p.split("+"))
+    );
     this.cb = cb;
   }
 
