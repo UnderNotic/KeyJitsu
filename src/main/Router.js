@@ -29,7 +29,7 @@ export default function() {
             }
           />
         </Route>
-        <Route path="/resharper">
+        <Route path="/rider">
           <Game />
         </Route>
         <Route path="/">
