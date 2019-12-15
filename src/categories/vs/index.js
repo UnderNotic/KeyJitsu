@@ -1,7 +1,9 @@
 import React from "react";
-import Panels from "..";
-import hotkeys from "./hotkeys";
+import Categories from "..";
+import hotkeys from "hotkeys/vs/keymap.default.json";
 
 export default function() {
-  return <Panels categoriesList={Object.keys(hotkeys)} />;
+  return (
+    <Categories categoriesList={Object.keys(hotkeys)} keymaps={["Default"]} />
+  );
 }

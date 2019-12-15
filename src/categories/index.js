@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { Link, useParams, useLocation } from "react-router-dom";
 import styles from "./panels.module.scss";
 import encodeCategories from "./encodeCategories";
+import Dropdown from "./Dropdown";
 
-export default function({ categoriesList }) {
+export default function({ categoriesList, keymaps }) {
   const [chosenCategories, setChosenCategories] = useState([]);
   const decodedCategories = encodeCategories(chosenCategories);
   const list = categoriesList.map((c, i) => (
@@ -27,7 +28,12 @@ export default function({ categoriesList }) {
       {c}
     </li>
   ));
-  const relPath = useRouteMatch().path;
+
+  const { keymap } = useParams();
+  var ide = useLocation().pathname.substring(
+    1,
+    useLocation().pathname.lastIndexOf("/")
+  );
 
   return (
     <>
@@ -52,6 +58,7 @@ export default function({ categoriesList }) {
                 ? "Deselect all"
                 : "Select all"}
             </button>
+            <Dropdown keymaps={keymaps} keymap={keymap} ide={ide} />
           </h4>
           <hr />
         </div>
@@ -76,7 +83,7 @@ export default function({ categoriesList }) {
             </button>
           </Link>
           {decodedCategories === 0 ? null : (
-            <Link to={`${relPath}/game/${decodedCategories}`}>
+            <Link to={`/${ide}/${keymap}/game/${decodedCategories}`}>
               <button
                 type="button"
                 className="btn btn-success btn-lg float-right"

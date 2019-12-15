@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "bootstrap/dist/js/bootstrap.bundle";
 import "./index.scss";
 import "./rfs.scss";
 import Main from "main";

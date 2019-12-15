@@ -1,11 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "home";
-import VsCode from "categories/vscode";
-import Vs from "categories/vs";
-import VsHeader from "common/components/headers/vs";
+import VsCodeCategory from "categories/vscode";
+import VsCategory from "categories/vs";
+import RiderCategory from "categories/rider";
+import VsHeader from "common/header/vs";
+import VsCodeHeader from "common/header/vscode";
+import RiderHeader from "common/header/rider";
 import Game from "game";
-import vsShortcuts from "categories/vs/hotkeys.json";
+import resolve from "hotkeys/hotkeyResolver";
 import { VsExcludedListStoreKey } from "./consts";
 
 export default function() {
@@ -13,24 +16,46 @@ export default function() {
     <Router>
       <Switch>
         <Route path="/vscode">
-          <VsCode />
+          <VsCodeHeader />
+          <Route exact path="/vscode/:keymap?" children={<VsCodeCategory />} />
+          <Route
+            exact
+            path="/vscode/:keymap/game/:encodedCategories"
+            render={props => (
+              <Game
+                shortcuts={resolve("vscode", props.match.params.keymap)}
+                excludedListStoreKey={VsExcludedListStoreKey}
+              />
+            )}
+          />
         </Route>
         <Route path="/vs">
           <VsHeader />
-          <Route exact path="/vs" children={<Vs />} />
+          <Route exact path="/vs/:keymap?" children={<VsCategory />} />
           <Route
             exact
-            path="/vs/game/:encodedCategories"
-            children={
+            path="/vs/:keymap/game/:encodedCategories"
+            render={props => (
               <Game
-                shortcuts={vsShortcuts}
+                shortcuts={resolve("vs", props.match.params.keymap)}
                 excludedListStoreKey={VsExcludedListStoreKey}
               />
-            }
+            )}
           />
         </Route>
         <Route path="/rider">
-          <Game />
+          <RiderHeader />
+          <Route exact path="/rider/:keymap?" children={<RiderCategory />} />
+          <Route
+            exact
+            path="/rider/:keymap/game/:encodedCategories"
+            render={props => (
+              <Game
+                shortcuts={resolve("rider", props.match.params.keymap)}
+                excludedListStoreKey={VsExcludedListStoreKey}
+              />
+            )}
+          />
         </Route>
         <Route path="/">
           <Home />

@@ -1,0 +1,810 @@
+{
+  "Top": [
+    {
+      "name": "Open Solution or Project",
+      "value": ["Ctrl+Shift+O"]
+    },
+    {
+      "name": "Open File or Folder",
+      "value": ["Ctrl+O"]
+    },
+    {
+      "name": "Show Action List",
+      "value": ["Alt+Enter"]
+    },
+    {
+      "name": "Search Everywhere",
+      "value": ["Ctrl+T Double-Shift"]
+    },
+    {
+      "name": "Navigate To…",
+      "value": ["Alt+` Alt+Dead Grave"]
+    },
+    {
+      "name": "Find Usages",
+      "value": ["Shift+F12"]
+    },
+    {
+      "name": "Select In",
+      "value": ["Alt+F1"]
+    },
+    {
+      "name": "Settings",
+      "value": ["Ctrl+Alt+S"]
+    },
+    {
+      "name": "Find Action",
+      "value": ["Ctrl+Shift+A"]
+    },
+    {
+      "name": "Generate",
+      "value": ["Alt+Insert"]
+    },
+    {
+      "name": "Build Solution",
+      "value": ["Ctrl+Shift+B"]
+    },
+    {
+      "name": "Debug",
+      "value": ["Shift+Alt+F9"]
+    },
+    {
+      "name": "View Breakpoints",
+      "value": ["Ctrl+Alt+B"]
+    },
+    {
+      "name": "Attach to Process",
+      "value": ["Ctrl+Alt+F5"]
+    },
+    {
+      "name": "VCS Operations Popup",
+      "value": ["Ctrl+Alt+Q"]
+    },
+    {
+      "name": "Refactor This",
+      "value": ["Ctrl+Shift+R"]
+    },
+    {
+      "name": "Inspect This",
+      "value": ["Ctrl+Shift+Alt+A"]
+    },
+    {
+      "name": "Code Cleanup",
+      "value": ["Ctrl+E, C Ctrl+E, Ctrl+C"]
+    }
+  ],
+  "Finding everything": [
+    {
+      "name": "Search Everywhere",
+      "value": "Ctrl+T Double-Shift"
+    },
+    {
+      "name": "Find",
+      "value": "Ctrl+F Alt+F3"
+    },
+    {
+      "name": "Find Next / Move to Next Occurrence",
+      "value": "F3 Ctrl+Shift+Down Ctrl+Alt+Page Down"
+    },
+    {
+      "name": "Find Previous / Move to Previous Occurrence",
+      "value": "Shift+F3 Ctrl+Shift+Up Ctrl+Alt+Page Up"
+    },
+    {
+      "name": "Replace",
+      "value": "Ctrl+H"
+    },
+    {
+      "name": "Find in Path",
+      "value": "Ctrl+Shift+F"
+    },
+    {
+      "name": "Replace in Path",
+      "value": "Ctrl+Shift+H"
+    },
+    {
+      "name": "Find Word at Caret",
+      "value": "Ctrl+F3"
+    },
+    {
+      "name": "File",
+      "value": "Ctrl+Shift+T"
+    },
+    {
+      "name": "File Member",
+      "value": "Alt+\\"
+    },
+    {
+      "name": "Symbol",
+      "value": "Ctrl+Shift+Alt+T"
+    },
+    {
+      "name": "Find Action",
+      "value": "Ctrl+Shift+A"
+    }
+  ],
+  "Navigating from symbols": [
+    {
+      "name": "Declaration or Usages",
+      "value": "F12 Ctrl+Click Right-click"
+    },
+    {
+      "name": "Type Declaration",
+      "value": "Ctrl+Shift+F11 Ctrl+Shift+Click"
+    },
+    {
+      "name": "Show Usages",
+      "value": "Shift+Alt+F12"
+    },
+    {
+      "name": "Super Method",
+      "value": "Alt+Home"
+    },
+    {
+      "name": "Implementation(s)",
+      "value": "Ctrl+F12 Ctrl+Alt+Click"
+    },
+    {
+      "name": "Implementation(s)",
+      "value": "Alt+End Ctrl+Alt+Click"
+    },
+    {
+      "name": "Navigate To…",
+      "value": "Alt+` Alt+Dead Grave"
+    },
+    {
+      "name": "Find Usages",
+      "value": "Shift+F12"
+    },
+    {
+      "name": "Highlight Usages in File",
+      "value": "Shift+Alt+F11"
+    }
+  ],
+  "Context navigation": [
+    {
+      "name": "Move Caret to Code Block Start",
+      "value": "Ctrl+["
+    },
+    {
+      "name": "Next Method",
+      "value": "Alt+Down"
+    },
+    {
+      "name": "Previous Method",
+      "value": "Alt+Up"
+    },
+    {
+      "name": "Line/Column...",
+      "value": "Ctrl+G"
+    },
+    {
+      "name": "Switcher",
+      "value": "Ctrl+Tab Ctrl+Shift+Tab"
+    },
+    {
+      "name": "Select In...",
+      "value": "Alt+F1"
+    },
+    {
+      "name": "Locate/Select in Solution View",
+      "value": "Shift+Alt+L"
+    },
+    {
+      "name": "Recent Files",
+      "value": "Ctrl+,"
+    },
+    {
+      "name": "Recently Changed Files",
+      "value": "Ctrl+Shift+,"
+    },
+    {
+      "name": "Last Edit Location",
+      "value": "Ctrl+Shift+Backspace"
+    },
+    {
+      "name": "Back",
+      "value": "Ctrl+Minus Ctrl+NumPad Minus Mouse Back"
+    },
+    {
+      "name": "Forward",
+      "value": "Ctrl+Shift+Minus Ctrl+Shift+NumPad Minus Mouse Forward"
+    },
+    {
+      "name": "Select Next Tab",
+      "value": "Alt+Right"
+    },
+    {
+      "name": "Select Previous Tab",
+      "value": "Alt+Left"
+    },
+    {
+      "name": "Add to Favorites",
+      "value": "Shift+Alt+F"
+    },
+    {
+      "name": "Show Find window",
+      "value": "Alt+3 Ctrl+Alt+F12"
+    },
+    {
+      "name": "Show TODO window",
+      "value": "Alt+6"
+    },
+    {
+      "name": "Show Favorites window",
+      "value": "Alt+2"
+    }
+  ],
+  "Code Analysis": [
+    {
+      "name": "Show Action List",
+      "value": "Alt+Enter"
+    },
+    {
+      "name": "Next Code Issue",
+      "value": "Alt+Page Down"
+    },
+    {
+      "name": "Previous Code Issue",
+      "value": "Alt+Page Up"
+    },
+    {
+      "name": "Next Error",
+      "value": "Shift+Alt+Page Down"
+    },
+    {
+      "name": "Previous Error",
+      "value": "Shift+Alt+Page Up"
+    },
+    {
+      "name": "Toggle Code Inspection",
+      "value": "Ctrl+Shift+Alt+8"
+    },
+    {
+      "name": "Run Inspection by Name",
+      "value": "Ctrl+Shift+Alt+I"
+    },
+    {
+      "name": "Inspect This...",
+      "value": "Ctrl+Shift+Alt+A"
+    },
+    {
+      "name": "Show Errors in Solution window",
+      "value": "Ctrl+Alt+2"
+    },
+    {
+      "name": "Show Inspection Results window",
+      "value": "Ctrl+Alt+4 Ctrl+Alt+V"
+    }
+  ],
+  "Creating and editing code": [
+    {
+      "name": "Select All",
+      "value": "Ctrl+A"
+    },
+    {
+      "name": "Move Caret to Previous Word with Selection",
+      "value": "Ctrl+Shift+Left"
+    },
+    {
+      "name": "Move Caret to Next Word with Selection",
+      "value": "Ctrl+Shift+Right"
+    },
+    {
+      "name": "Move Caret to Page Top with Selection",
+      "value": "Ctrl+Shift+Page Up"
+    },
+    {
+      "name": "Move Caret to Page Bottom with Selection",
+      "value": "Ctrl+Shift+Page Down"
+    },
+    {
+      "name": "Extend Selection",
+      "value": "Ctrl+Alt+Right Ctrl+W"
+    },
+    {
+      "name": "Shrink Selection",
+      "value": "Ctrl+Alt+Left Ctrl+Shift+W"
+    },
+    {
+      "name": "Add Selection for Next Occurrence",
+      "value": "Alt+J"
+    },
+    {
+      "name": "Copy",
+      "value": "Ctrl+C Ctrl+Insert"
+    },
+    {
+      "name": "Cut",
+      "value": "Ctrl+X Shift+Delete Ctrl+L"
+    },
+    {
+      "name": "Paste",
+      "value": "Ctrl+V Shift+Insert"
+    },
+    {
+      "name": "Paste without Formatting",
+      "value": "Ctrl+Shift+Alt+V"
+    },
+    {
+      "name": "Paste from History...",
+      "value": "Ctrl+Shift+V Ctrl+Shift+Insert"
+    },
+    {
+      "name": "Duplicate Line or Selection",
+      "value": "Ctrl+D"
+    },
+    {
+      "name": "Copy Paths",
+      "value": "Ctrl+Shift+C"
+    },
+    {
+      "name": "Save All",
+      "value": "Ctrl+Shift+S"
+    },
+    {
+      "name": "Undo",
+      "value": "Ctrl+Z"
+    },
+    {
+      "name": "Indent Selection",
+      "value": "Tab"
+    },
+    {
+      "name": "Unindent Line or Selection",
+      "value": "Shift+Tab"
+    },
+    {
+      "name": "Move Line Up",
+      "value": "Shift+Alt+Up"
+    },
+    {
+      "name": "Move Line Down",
+      "value": "Shift+Alt+Down"
+    },
+    {
+      "name": "Start New Line",
+      "value": "Shift+Enter"
+    },
+    {
+      "name": "Start New Line Before Current",
+      "value": "Ctrl+Enter"
+    },
+    {
+      "name": "Delete Line",
+      "value": "Ctrl+Shift+L"
+    },
+    {
+      "name": "Toggle Case",
+      "value": "Ctrl+Shift+U"
+    },
+    {
+      "name": "New Scratch File",
+      "value": "Ctrl+Shift+Alt+Insert"
+    }
+  ],
+  "Coding assistance": [
+    {
+      "name": "Show Action List",
+      "value": "Alt+Enter"
+    },
+    {
+      "name": "Basic Completion",
+      "value": "Ctrl+Space Ctrl+J"
+    },
+    {
+      "name": "Smart Completion",
+      "value": "Ctrl+Alt+Space"
+    },
+    {
+      "name": "Second Basic Completion",
+      "value": "Shift+Alt+Space"
+    },
+    {
+      "name": "Complete Current Statement",
+      "value": "Ctrl+Shift+Enter"
+    },
+    {
+      "name": "Parameter Info",
+      "value": "Ctrl+Shift+Space"
+    },
+    {
+      "name": "Quick Documentation",
+      "value": "Ctrl+Shift+F1"
+    },
+    {
+      "name": "Move Statement Up",
+      "value": "Ctrl+Shift+Alt+Up"
+    },
+    {
+      "name": "Move Statement Down",
+      "value": "Ctrl+Shift+Alt+Down"
+    },
+    {
+      "name": "Move Statement Left",
+      "value": "Ctrl+Shift+Alt+Left"
+    },
+    {
+      "name": "Move Statement Right",
+      "value": "Ctrl+Shift+Alt+Right"
+    },
+    {
+      "name": "Comment/uncomment with Line Comment",
+      "value": "Ctrl+Alt+/ Ctrl+Alt+NumPad / Ctrl+K, C Ctrl+K, Ctrl+C"
+    },
+    {
+      "name": "Comment/uncomment with Block Comment",
+      "value": "Ctrl+Shift+/ Ctrl+Shift+NumPad /"
+    },
+    {
+      "name": "Generate...",
+      "value": "Alt+Insert"
+    },
+    {
+      "name": "Code Cleanup...",
+      "value": "Ctrl+E, C Ctrl+E, Ctrl+C"
+    },
+    {
+      "name": "Silent Code Cleanup",
+      "value": "Ctrl+E, F Ctrl+E, Ctrl+F"
+    }
+  ],
+  "Building, Running, and Debugging": [
+    {
+      "name": "NuGet Quick List",
+      "value": "Shift+Alt+N"
+    },
+    {
+      "name": "Build Solution",
+      "value": "Ctrl+Shift+B"
+    },
+    {
+      "name": "Run context configuration",
+      "value": "Ctrl+F5"
+    },
+    {
+      "name": "Run...",
+      "value": "Ctrl+Shift+Alt+R"
+    },
+    {
+      "name": "Debug context configuration",
+      "value": "Alt+F5"
+    },
+    {
+      "name": "Debug...",
+      "value": "Shift+Alt+F9"
+    },
+    {
+      "name": "Attach to Process...",
+      "value": "Ctrl+Alt+F5"
+    },
+    {
+      "name": "Stop",
+      "value": "Shift+F5"
+    },
+    {
+      "name": "Stop Background Processes...",
+      "value": "Ctrl+Shift+F2"
+    },
+    {
+      "name": "Step Over",
+      "value": "F10"
+    },
+    {
+      "name": "Force Step Over",
+      "value": "Shift+Alt+F8"
+    },
+    {
+      "name": "Step Into",
+      "value": "F11"
+    },
+    {
+      "name": "Smart Step Into",
+      "value": "Shift+F7"
+    },
+    {
+      "name": "Force Step Into",
+      "value": "Alt+F11"
+    },
+    {
+      "name": "Step Out",
+      "value": "Shift+F11"
+    },
+    {
+      "name": "Run to Cursor",
+      "value": "Ctrl+F10"
+    },
+    {
+      "name": "Force Run to Cursor",
+      "value": "Ctrl+Alt+F9"
+    },
+    {
+      "name": "Jump to Statement",
+      "value": "Ctrl+Shift+F10"
+    },
+    {
+      "name": "Pause Program",
+      "value": "Ctrl+Pause Ctrl+Shift+P"
+    },
+    {
+      "name": "Resume Program",
+      "value": "F5"
+    },
+    {
+      "name": "Evaluate Expression...",
+      "value": "Shift+F9"
+    },
+    {
+      "name": "Quick Evaluate Expression",
+      "value": "Ctrl+Alt+F8 Alt+Click"
+    },
+    {
+      "name": "Show Execution Point",
+      "value": "Alt+NumPad * Ctrl+L"
+    },
+    {
+      "name": "Toggle Line Breakpoint",
+      "value": "F9"
+    },
+    {
+      "name": "Toggle Temporary Line Breakpoint",
+      "value": "Ctrl+Shift+Alt+F8"
+    },
+    {
+      "name": "Toggle Breakpoint Enabled",
+      "value": "Ctrl+F9"
+    },
+    {
+      "name": "View Breakpoints...",
+      "value": "Ctrl+Alt+B"
+    },
+    {
+      "name": "Edit breakpoint",
+      "value": "Alt+F9"
+    },
+    {
+      "name": "Show Build window",
+      "value": "Alt+0"
+    },
+    {
+      "name": "Show Run window",
+      "value": "Alt+4"
+    },
+    {
+      "name": "Show Debug window",
+      "value": "Alt+5"
+    },
+    {
+      "name": "Show NuGet window",
+      "value": "Alt+7 Shift+Alt+7"
+    }
+  ],
+  "Refactorings": [
+    {
+      "name": "Refactor This",
+      "value": "Ctrl+Shift+R"
+    },
+    {
+      "name": "Change Signature",
+      "value": "Ctrl+R, S Ctrl+R, Ctrl+S"
+    },
+    {
+      "name": "Inline",
+      "value": "Ctrl+R, I Ctrl+R, Ctrl+I"
+    },
+    {
+      "name": "Move",
+      "value": "Ctrl+R, O Ctrl+R, Ctrl+O"
+    },
+    {
+      "name": "Extract Method",
+      "value": "Ctrl+R, M Ctrl+R, Ctrl+M"
+    },
+    {
+      "name": "Introduce Field",
+      "value": "Ctrl+R, F Ctrl+R, Ctrl+F"
+    },
+    {
+      "name": "Introduce Parameter",
+      "value": "Ctrl+R, P Ctrl+R, Ctrl+P"
+    },
+    {
+      "name": "Introduce Variable",
+      "value": "Ctrl+R, V Ctrl+R, Ctrl+V"
+    },
+    {
+      "name": "Rename",
+      "value": "Ctrl+R, R Ctrl+R, Ctrl+R"
+    },
+    {
+      "name": "Safe Delete",
+      "value": "Ctrl+R, D Ctrl+R, Ctrl+D Alt+Delete"
+    }
+  ],
+  "Global VCS actions": [
+    {
+      "name": "VCS Operations Popup",
+      "value": "Ctrl+Alt+Q"
+    },
+    {
+      "name": "Show Commit window",
+      "value": "Shift+Alt+9"
+    },
+    {
+      "name": "Show Repository window",
+      "value": "Alt+9"
+    },
+    {
+      "name": "Commit",
+      "value": "Ctrl+Alt+K"
+    },
+    {
+      "name": "Update Project",
+      "value": "Ctrl+Alt+W"
+    },
+    {
+      "name": "Rollback",
+      "value": "Ctrl+Alt+Z"
+    },
+    {
+      "name": "Push",
+      "value": "Ctrl+Shift+K"
+    },
+    {
+      "name": "Next Change",
+      "value": "Ctrl+Shift+Alt+N"
+    },
+    {
+      "name": "Previous Change",
+      "value": "Ctrl+Shift+Alt+P"
+    }
+  ],
+  "Unit Testing": [
+    {
+      "name": "Unit Testing Quick List",
+      "value": "Shift+Alt+U"
+    },
+    {
+      "name": "Run Unit Tests",
+      "value": "Ctrl+U, R Ctrl+U, Ctrl+R"
+    },
+    {
+      "name": "Debug Unit Tests",
+      "value": "Ctrl+U, D Ctrl+U, Ctrl+D"
+    },
+    {
+      "name": "Stop Execution",
+      "value": "Ctrl+U, S Ctrl+U, Ctrl+S"
+    },
+    {
+      "name": "Repeat Previous Run",
+      "value": "Ctrl+U, U Ctrl+U, Ctrl+U"
+    },
+    {
+      "name": "Rerun Failed Tests",
+      "value": "Ctrl+U, F Ctrl+U, Ctrl+F"
+    },
+    {
+      "name": "Repeat Tests Until Failure",
+      "value": "Ctrl+U, W Ctrl+U, Ctrl+W"
+    },
+    {
+      "name": "Run All Tests from Solution",
+      "value": "Ctrl+U, L Ctrl+U, Ctrl+L"
+    },
+    {
+      "name": "Create New Session",
+      "value": "Ctrl+U, N Ctrl+U, Ctrl+N"
+    },
+    {
+      "name": "Append Tests to Session",
+      "value": "Ctrl+U, A Ctrl+U, Ctrl+A"
+    },
+    {
+      "name": "Run Current Session",
+      "value": "Ctrl+U, Y Ctrl+U, Ctrl+Y"
+    },
+    {
+      "name": "Run Unit Tests under dotMemory Unit",
+      "value": "Ctrl+U, M Ctrl+U, Ctrl+M"
+    },
+    {
+      "name": "Show Unit Tests window",
+      "value": "Alt+8 Shift+Alt+8"
+    },
+    {
+      "name": "Run Unit Tests (Tool Window)",
+      "value": "Shift+Enter Ctrl+R"
+    },
+    {
+      "name": "Debug Unit Tests (Tool Window)",
+      "value": "Ctrl+D"
+    },
+    {
+      "name": "Run Current Session (Tool Window)",
+      "value": "Ctrl+Y"
+    },
+    {
+      "name": "Rerun Failed Tests (Tool Window)",
+      "value": "Ctrl+F"
+    },
+    {
+      "name": "Create New Session (Tool Window)",
+      "value": "Shift+Alt+Insert"
+    },
+    {
+      "name": "Append Tests to Session (Tool Window)",
+      "value": "Ctrl+Alt+Insert"
+    },
+    {
+      "name": "Remove Selected Tests (Tool Window)",
+      "value": "Delete"
+    },
+    {
+      "name": "Run All Tests from Solution (Tool Window)",
+      "value": "Ctrl+L"
+    }
+  ],
+  "Tool windows": [
+    {
+      "name": "Build",
+      "value": "Alt+0"
+    },
+    {
+      "name": "Explorer",
+      "value": "Ctrl+Alt+L Alt+1"
+    },
+    {
+      "name": "Favorites",
+      "value": "Alt+2"
+    },
+    {
+      "name": "Find",
+      "value": "Alt+3 Ctrl+Alt+F12"
+    },
+    {
+      "name": "Run",
+      "value": "Alt+4"
+    },
+    {
+      "name": "Debug",
+      "value": "Alt+5"
+    },
+    {
+      "name": "TODO",
+      "value": "Alt+6"
+    },
+    {
+      "name": "NuGet",
+      "value": "Alt+7 Shift+Alt+7"
+    },
+    {
+      "name": "Unit Tests",
+      "value": "Alt+8 Shift+Alt+8"
+    },
+    {
+      "name": "Commit",
+      "value": "Shift+Alt+9"
+    },
+    {
+      "name": "Repository",
+      "value": "Alt+9"
+    },
+    {
+      "name": "Terminal",
+      "value": "Ctrl+Alt+1"
+    },
+    {
+      "name": "Errors In Solution",
+      "value": "Ctrl+Alt+2"
+    },
+    {
+      "name": "Database",
+      "value": "Ctrl+Alt+3"
+    },
+    {
+      "name": "Inspection Results",
+      "value": "Ctrl+Alt+4 Ctrl+Alt+V"
+    }
+  ]
+}

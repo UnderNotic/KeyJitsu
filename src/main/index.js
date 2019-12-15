@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./main.module.scss";
 import Router from "./Router";
-import katanaImg from "common/assets/katana.png";
+import katanaImg from "common/assets/katana/katana.png";
 
 export default function() {
   return (
