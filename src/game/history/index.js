@@ -17,7 +17,7 @@ export default function({ historyItems, exclude }) {
         >
           {h.shortcut.name}
           <span className="float-right">
-            <kbd>{h.shortcut.value.join(" ")}</kbd>
+            <kbd>{h.shortcut.value.join(" || ")}</kbd>
           </span>
         </li>
       ))}

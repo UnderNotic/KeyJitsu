@@ -1,5 +1,6 @@
 import React from "react";
 
+import Footer from "./footer";
 import styles from "./main.module.scss";
 import Router from "./Router";
 import katanaImg from "common/assets/katana/katana.png";
@@ -15,6 +16,7 @@ export default function() {
           <Router />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

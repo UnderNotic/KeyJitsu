@@ -14,7 +14,7 @@
     },
     {
       "name": "Search Everywhere",
-      "value": ["ctrl+t shift shift"]
+      "value": ["ctrl+t", "shift shift"]
     },
     {
       "name": "Navigate To…",
@@ -76,7 +76,7 @@
   "Finding everything": [
     {
       "name": "Search Everywhere",
-      "value": ["ctrl+T", "shift shift"]
+      "value": ["ctrl+t", "shift shift"]
     },
     {
       "name": "Find",
