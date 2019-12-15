@@ -2,13 +2,13 @@
   "Basic Editing": [
     {
       "name": "Cut line",
-      "value": "Ctrl+X"
+      "value": ["ctrl+x"]
     }
   ],
   "Rich Languages Editing": [
     {
       "name": "Trigger Suggest",
-      "value": "Ctrl+space"
+      "value": ["ctrl+space"]
     }
   ]
 }

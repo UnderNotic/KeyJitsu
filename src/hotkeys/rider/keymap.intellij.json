@@ -2,7 +2,7 @@
   "Top": [
     {
       "name": "Open Solution or Project",
-      "value": ["Ctrl+Shift+O"]
+      "value": ["ctrl+shift+o"]
     }
   ]
 }

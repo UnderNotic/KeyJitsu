@@ -1,56 +1,188 @@
 {
-  "Build": [
+  "Global VCS actions": [
     {
-      "name": "Build solution",
-      "value": ["ctrl+shift+b"]
+      "name": "VCS Operations Popup",
+      "value": ["ctrl+alt+q"]
     },
     {
-      "name": "Build selection",
-      "value": ["ctrl+b"]
+      "name": "Show Commit window",
+      "value": ["shift+alt+9"]
     },
     {
-      "name": "Build cancel",
-      "value": ["ctrl+break"]
+      "name": "Show Repository window",
+      "value": ["alt+9"]
     },
     {
-      "name": "Build compile",
-      "value": ["ctrl+f7"]
+      "name": "Commit",
+      "value": ["ctrl+alt+k"]
     },
     {
-      "name": "Build Run Code Analysis",
-      "value": ["alt+f11"]
+      "name": "Update Project",
+      "value": ["ctrl+alt+w"]
+    },
+    {
+      "name": "Rollback",
+      "value": ["ctrl+alt+z"]
+    },
+    {
+      "name": "Push",
+      "value": ["ctrl+shift+k"]
+    },
+    {
+      "name": "Next Change",
+      "value": ["ctrl+shift+alt+n"]
+    },
+    {
+      "name": "Previous Change",
+      "value": ["ctrl+shift+alt+p"]
     }
   ],
-  "Edit": [
+  "Unit Testing": [
     {
-      "name": "Edit Next bookmark",
-      "value": ["ctrl+k"]
+      "name": "Unit Testing Quick List",
+      "value": ["shift+alt+u"]
     },
     {
-      "name": "Edit Stop search",
-      "value": ["alt+f3 s"]
+      "name": "Run Unit Tests",
+      "value": ["ctrl+u r", "ctrl+u ctrl+r"]
+    },
+    {
+      "name": "Debug Unit Tests",
+      "value": ["ctrl+u d", "ctrl+d ctrl+d"]
+    },
+    {
+      "name": "Stop Execution",
+      "value": ["ctrl+u s", "ctrl+u ctrl+s"]
+    },
+    {
+      "name": "Repeat Previous Run",
+      "value": ["ctrl+u u", "ctrl+u ctrl+u"]
+    },
+    {
+      "name": "Rerun Failed Tests",
+      "value": ["ctrl+u f", "ctrl+u ctrl+f"]
+    },
+    {
+      "name": "Repeat Tests Until Failure",
+      "value": ["ctrl+u w", "ctrl+u ctrl+w"]
+    },
+    {
+      "name": "Run All Tests from Solution",
+      "value": ["ctrl+u l", "ctrl+u ctrl+l"]
+    },
+    {
+      "name": "Create New Session",
+      "value": ["ctrl+u n", "ctrl+u ctrl+n"]
+    },
+    {
+      "name": "Append Tests to Session",
+      "value": ["ctrl+u a", "ctrl+u ctrl+a"]
+    },
+    {
+      "name": "Run Current Session",
+      "value": ["ctrl+u y", "ctrl+u ctrl+y"]
+    },
+    {
+      "name": "Run Unit Tests under dotMemory Unit",
+      "value": ["ctrl+u m", "ctrl+u ctrl+m"]
+    },
+    {
+      "name": "Show Unit Tests window",
+      "value": ["alt+8", "shift+alt+8"]
+    },
+    {
+      "name": "Run Unit Tests (Tool Window)",
+      "value": ["shift+enter", "ctrl+r"]
+    },
+    {
+      "name": "Debug Unit Tests (Tool Window)",
+      "value": ["ctrl+d"]
+    },
+    {
+      "name": "Run Current Session (Tool Window)",
+      "value": ["ctrl+y"]
+    },
+    {
+      "name": "Rerun Failed Tests (Tool Window)",
+      "value": ["ctrl+f"]
+    },
+    {
+      "name": "Create New Session (Tool Window)",
+      "value": ["shift+alt+insert"]
+    },
+    {
+      "name": "Append Tests to Session (Tool Window)",
+      "value": ["ctrl+alt+insert"]
+    },
+    {
+      "name": "Remove Selected Tests (Tool Window)",
+      "value": ["delete"]
+    },
+    {
+      "name": "Run All Tests from Solution (Tool Window)",
+      "value": ["ctrl+l"]
     }
   ],
-  "Basic editing": [],
-  "Search and replace": [],
-  "Multi-cursor and selection": [],
-  "Rich languages editing": [],
-  "Editor management": [],
-  "File management": [],
-  "Display": [],
-  "Debug": [
+  "Tool windows": [
     {
-      "name": "Debug start",
-      "value": ["f5"]
+      "name": "Build",
+      "value": ["alt+0"]
     },
     {
-      "name": "Step into",
-      "value": ["f11"]
+      "name": "Explorer",
+      "value": ["ctrl+alt+l", "alt+1"]
     },
     {
-      "name": "Step out",
-      "value": ["shift+f11"]
+      "name": "Favorites",
+      "value": ["alt+2"]
+    },
+    {
+      "name": "Find",
+      "value": ["alt+3", "ctrl+alt+f12"]
+    },
+    {
+      "name": "Run",
+      "value": ["alt+4"]
+    },
+    {
+      "name": "Debug",
+      "value": ["alt+5"]
+    },
+    {
+      "name": "TODO",
+      "value": ["alt+6"]
+    },
+    {
+      "name": "NuGet",
+      "value": ["alt+7", "shift+alt+7"]
+    },
+    {
+      "name": "Unit Tests",
+      "value": ["alt+8", "shift+alt+8"]
+    },
+    {
+      "name": "Commit",
+      "value": ["shift+alt+9"]
+    },
+    {
+      "name": "Repository",
+      "value": ["alt+9"]
+    },
+    {
+      "name": "Terminal",
+      "value": ["ctrl+alt+1"]
+    },
+    {
+      "name": "Errors In Solution",
+      "value": ["ctrl+alt+2"]
+    },
+    {
+      "name": "Database",
+      "value": ["ctrl+alt+3"]
+    },
+    {
+      "name": "Inspection Results",
+      "value": ["ctrl+alt+4", "ctrl+alt+v"]
     }
-  ],
-  "Integrated terminal": []
+  ]
 }
