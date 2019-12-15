@@ -1,9 +1,8 @@
 import React from "react";
 import Categories from "..";
-import hotkeys from "hotkeys/vs/keymap.default.json";
 
-export default function() {
+export default function({ shortcuts }) {
   return (
-    <Categories categoriesList={Object.keys(hotkeys)} keymaps={["Default"]} />
+    <Categories categoriesList={Object.keys(shortcuts)} keymaps={["Default"]} />
   );
 }

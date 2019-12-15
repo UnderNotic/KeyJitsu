@@ -1,11 +1,10 @@
 import React from "react";
 import Categories from "..";
-import hotkeys from "hotkeys/rider/keymap.visualstudio.json";
 
-export default function() {
+export default function({ shortcuts }) {
   return (
     <Categories
-      categoriesList={Object.keys(hotkeys)}
+      categoriesList={Object.keys(shortcuts)}
       keymaps={["Visual Studio", "Intellij"]}
     />
   );

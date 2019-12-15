@@ -13,7 +13,7 @@ export default function({ keymaps, keymap, ide }) {
         aria-haspopup="true"
         aria-expanded="false"
       >
-        {keymap ? decodeURI(keymap) : keymaps[0]}
+        Keymap {keymap ? decodeURI(keymap) : keymaps[0]}
       </button>
       <div className="dropdown-menu dropdown-menu-right">
         {keymaps.map((k, i) => (

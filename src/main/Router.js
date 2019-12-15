@@ -17,7 +17,15 @@ export default function() {
       <Switch>
         <Route path="/vscode">
           <VsCodeHeader />
-          <Route exact path="/vscode/:keymap?" children={<VsCodeCategory />} />
+          <Route
+            exact
+            path="/vscode/:keymap?"
+            render={props => (
+              <VsCodeCategory
+                shortcuts={resolve("vscode", props.match.params.keymap)}
+              />
+            )}
+          />
           <Route
             exact
             path="/vscode/:keymap/game/:encodedCategories"
@@ -31,7 +39,15 @@ export default function() {
         </Route>
         <Route path="/vs">
           <VsHeader />
-          <Route exact path="/vs/:keymap?" children={<VsCategory />} />
+          <Route
+            exact
+            path="/vs/:keymap?"
+            render={props => (
+              <VsCategory
+                shortcuts={resolve("vs", props.match.params.keymap)}
+              />
+            )}
+          />
           <Route
             exact
             path="/vs/:keymap/game/:encodedCategories"
@@ -45,7 +61,15 @@ export default function() {
         </Route>
         <Route path="/rider">
           <RiderHeader />
-          <Route exact path="/rider/:keymap?" children={<RiderCategory />} />
+          <Route
+            exact
+            path="/rider/:keymap?"
+            render={props => (
+              <RiderCategory
+                shortcuts={resolve("rider", props.match.params.keymap)}
+              />
+            )}
+          />
           <Route
             exact
             path="/rider/:keymap/game/:encodedCategories"
