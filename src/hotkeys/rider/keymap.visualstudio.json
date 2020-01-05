@@ -84,7 +84,7 @@
     },
     {
       "name": "Find Next / Move to Next Occurrence",
-      "value": "F3 ctrl+shift+Down ctrl+alt+Page Down"
+      "value": ["f3", "ctrl+shift+down", "ctrl+alt+Page Down"]
     },
     {
       "name": "Find Previous / Move to Previous Occurrence",
@@ -104,7 +104,7 @@
     },
     {
       "name": "Find Word at Caret",
-      "value": "ctrl+f3"
+      "value": ["ctrl+f3"]
     },
     {
       "name": "File",
@@ -438,7 +438,7 @@
     },
     {
       "name": "Generate...",
-      "value": "alt+insert"
+      "value": ["alt+insert"]
     },
     {
       "name": "Code Cleanup...",
@@ -552,7 +552,7 @@
     },
     {
       "name": "Toggle Breakpoint Enabled",
-      "value": "ctrl+f9"
+      "value": ["ctrl+f9"]
     },
     {
       "name": "View Breakpoints...",
