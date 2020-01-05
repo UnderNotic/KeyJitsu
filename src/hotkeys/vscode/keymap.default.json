@@ -1,14 +1,301 @@
 {
-  "Basic Editing": [
+  "General": [
     {
-      "name": "Cut line",
-      "value": ["ctrl+x"]
+      "name": "Show Command Palette",
+      "value": ["ctrl+shift+p", "f1"]
+    },
+    {
+      "name": "Quick Open, Go to File…",
+      "value": ["ctrl+p"]
+    },
+    {
+      "name": "New window/instance",
+      "value": ["ctrl+shift+n"]
+    },
+    {
+      "name": "Close window/instance",
+      "value": ["ctrl+shift+w"]
+    },
+    {
+      "name": "User Settings",
+      "value": ["ctrl+,"]
+    },
+    {
+      "name": "Keyboard Shortcuts",
+      "value": ["ctrl+k ctrl+s"]
     }
   ],
-  "Rich Languages Editing": [
+  "Basic Editing": [
     {
-      "name": "Trigger Suggest",
-      "value": ["ctrl+space"]
+      "name": "Cut line (empty selection)",
+      "value": ["ctrl+x"]
+    },
+    {
+      "name": "Copy line (empty selection)",
+      "value": ["ctrl+c"]
+    },
+    {
+      "name": "Move line up",
+      "value": ["alt+up"]
+    },
+    {
+      "name": "Move line down",
+      "value": ["alt+down"]
+    },
+    {
+      "name": "Copy line down",
+      "value": ["shift+alt+down"]
+    },
+    {
+      "name": "Copy line up",
+      "value": ["shift+alt+up"]
+    },
+    {
+      "name": "Delete line",
+      "value": ["ctrl+shift+k"]
+    },
+    {
+      "name": "Insert line below",
+      "value": ["ctrl+enter"]
+    },
+    {
+      "name": "Insert line above",
+      "value": ["ctrl+shift+enter"]
+    },
+    {
+      "name": "Jump to matching bracket",
+      "value": ["ctrl+shift+\\"]
+    },
+    {
+      "name": "Indent line",
+      "value": ["ctrl+]"]
+    },
+    {
+      "name": "Outdent line",
+      "value": ["ctrl+["]
+    },
+    {
+      "name": "Go to beginning of line",
+      "value": ["home"]
+    },
+    {
+      "name": "Go to end of line",
+      "value": ["end"]
+    },
+    {
+      "name": "Go to beginning of file",
+      "value": ["ctrl+home"]
+    },
+    {
+      "name": "Go to end of file",
+      "value": ["ctrl+end"]
+    },
+    {
+      "name": "Scroll line up",
+      "value": ["ctrl+up"]
+    },
+    {
+      "name": "Scroll line down",
+      "value": ["ctrl+down"]
+    },
+    {
+      "name": "Scroll page up",
+      "value": ["alt+pageup"]
+    },
+    {
+      "name": "Scroll page down",
+      "value": ["alt+pagedown"]
+    },
+    {
+      "name": "Fold (collapse) region",
+      "value": ["ctrl+shift+["]
+    },
+    {
+      "name": "Unfold (uncollapse) region",
+      "value": ["ctrl+shift+]"]
+    },
+    {
+      "name": "Fold (collapse) all subregions",
+      "value": ["ctrl+k ctrl+["]
+    },
+    {
+      "name": "Unfold (uncollapse) all subregions",
+      "value": ["ctrl+k ctrl+]"]
+    },
+    {
+      "name": "Fold (collapse) all regions",
+      "value": ["ctrl+k ctrl+0"]
+    },
+    {
+      "name": "Unfold (uncollapse) all regions",
+      "value": ["ctrl+k ctrl+j"]
+    },
+    {
+      "name": "Add line comment",
+      "value": ["ctrl+k ctrl+c"]
+    },
+    {
+      "name": "Remove line comment",
+      "value": ["ctrl+k ctrl+u"]
+    },
+    {
+      "name": "Toggle line comment",
+      "value": ["ctrl+/"]
+    },
+    {
+      "name": "Toggle block comment",
+      "value": ["shift+alt+a"]
+    },
+    {
+      "name": "Toggle word wrap",
+      "value": ["alt+z"]
     }
-  ]
+  ],
+  "Navigation": [
+    {
+      "name": "Show all Symbols",
+      "value": ["ctrl+t"]
+    },
+    {
+      "name": "Go to Line...",
+      "value": ["ctrl+g"]
+    },
+    {
+      "name": "Go to File...",
+      "value": ["ctrl+p"]
+    },
+    {
+      "name": "Go to Symbol...",
+      "value": ["ctrl+shift+o"]
+    },
+    {
+      "name": "Show Problems panel",
+      "value": ["ctrl+shift+m"]
+    },
+    {
+      "name": "Go to next error or warning",
+      "value": ["F8"]
+    },
+    {
+      "name": "Go to previous error or warning",
+      "value": ["shift+f8"]
+    },
+    {
+      "name": "Navigate editor group history",
+      "value": ["ctrl+shift+tab"]
+    },
+    {
+      "name": "Go back",
+      "value": ["alt+left"]
+    },
+    {
+      "name": "Go forward",
+      "value": ["alt+right"]
+    }
+  ],
+  "Search and replace": [
+    {
+      "name": "Find",
+      "value": ["ctrl+f"]
+    },
+    {
+      "name": "Replace",
+      "value": ["ctrl+h"]
+    },
+    {
+      "name": "Find next",
+      "value": ["f3"]
+    },
+    {
+      "name": "Find previous",
+      "value": ["shift+f3"]
+    },
+    {
+      "name": "Select all occurences of Find match",
+      "value": ["alt+enter"]
+    },
+    {
+      "name": "Add selection to next Find match",
+      "value": ["ctrl+d"]
+    },
+    {
+      "name": "Move last selection to next Find match",
+      "value": ["ctrl+k ctrl+d"]
+    },
+    {
+      "name": "Toggle case-sensitive",
+      "value": ["alt+c"]
+    },
+    {
+      "name": "Toggle regex",
+      "value": ["alt+r"]
+    },
+    {
+      "name": "Toggle whole word",
+      "value": ["alt+w"]
+    }
+  ],
+  "Multi-cursor and selection": [],
+  "Rich languages editing": [],
+  "File management": [
+    {
+      "name": "New File",
+      "value": ["ctrl+n"]
+    },
+    {
+      "name": "Open File...",
+      "value": ["ctrl+o"]
+    },
+    {
+      "name": "Save",
+      "value": ["ctrl+s"]
+    },
+    {
+      "name": "Save As...",
+      "value": ["ctrl+shift+s"]
+    },
+    {
+      "name": "Save All",
+      "value": ["ctrl+k s"]
+    },
+    {
+      "name": "Close",
+      "value": ["ctrl+f4"]
+    },
+    {
+      "name": "Close All",
+      "value": ["ctrl+k ctrl+w"]
+    },
+    {
+      "name": "Reopen closed editor",
+      "value": ["ctrl+shift+t"]
+    },
+    {
+      "name": "Keep preview mode editor open",
+      "value": ["ctrl+k enter"]
+    },
+    {
+      "name": "Open next",
+      "value": ["ctrl+tab"]
+    },
+    {
+      "name": "Open previous",
+      "value": ["ctrl+shift+tab"]
+    },
+    {
+      "name": "Copy path of active file",
+      "value": ["ctrl+k p"]
+    },
+    {
+      "name": "Reveal active file in Explorer",
+      "value": ["ctrl+k r"]
+    },
+    {
+      "name": "Show active file in new window/instance",
+      "value": ["ctrl+k o"]
+    }
+  ],
+  "Display": [],
+  "Debug": [],
+  "Integrated terminal": []
 }
