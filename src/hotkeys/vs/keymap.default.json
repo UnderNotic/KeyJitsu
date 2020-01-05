@@ -1,188 +1,416 @@
 {
-  "Global VCS actions": [
+  "Build": [
     {
-      "name": "VCS Operations Popup",
-      "value": ["ctrl+alt+q"]
+      "name": "Build solution",
+      "value": ["ctrl+shift+b"]
     },
     {
-      "name": "Show Commit window",
-      "value": ["shift+alt+9"]
+      "name": "Build cancel",
+      "value": ["ctrl+break"]
     },
     {
-      "name": "Show Repository window",
-      "value": ["alt+9"]
+      "name": "Build compile",
+      "value": ["ctrl+f7"]
     },
     {
-      "name": "Commit",
-      "value": ["ctrl+alt+k"]
-    },
-    {
-      "name": "Update Project",
-      "value": ["ctrl+alt+w"]
-    },
-    {
-      "name": "Rollback",
-      "value": ["ctrl+alt+z"]
-    },
-    {
-      "name": "Push",
-      "value": ["ctrl+shift+k"]
-    },
-    {
-      "name": "Next Change",
-      "value": ["ctrl+shift+alt+n"]
-    },
-    {
-      "name": "Previous Change",
-      "value": ["ctrl+shift+alt+p"]
+      "name": "Build RunCodeAnalysisonSolution",
+      "value": ["alt+f11"]
     }
   ],
-  "Unit Testing": [
+  "Debug": [
     {
-      "name": "Unit Testing Quick List",
-      "value": ["shift+alt+u"]
+      "name": "Debug BreakAtFunction",
+      "value": ["ctrl+b"]
     },
     {
-      "name": "Run Unit Tests",
-      "value": ["ctrl+u r", "ctrl+u ctrl+r"]
+      "name": "Debug BreakAll",
+      "value": ["ctrl+alt+break"]
     },
     {
-      "name": "Debug Unit Tests",
-      "value": ["ctrl+u d", "ctrl+d ctrl+d"]
+      "name": "Debug DeleteAllBreakpoints",
+      "value": ["ctrl+shift+f9"]
     },
     {
-      "name": "Stop Execution",
-      "value": ["ctrl+u s", "ctrl+u ctrl+s"]
+      "name": "Debug Exceptions",
+      "value": ["ctrl+alt+e"]
     },
     {
-      "name": "Repeat Previous Run",
-      "value": ["ctrl+u u", "ctrl+u ctrl+u"]
+      "name": "Debug QuickWatch",
+      "value": ["shift+f9", "ctrl+alt+q"]
     },
     {
-      "name": "Rerun Failed Tests",
-      "value": ["ctrl+u f", "ctrl+u ctrl+f"]
+      "name": "Debug Restart",
+      "value": ["ctrl+shift+f5"]
     },
     {
-      "name": "Repeat Tests Until Failure",
-      "value": ["ctrl+u w", "ctrl+u ctrl+w"]
+      "name": "Debug RunToCursor",
+      "value": ["ctrl+f10"]
     },
     {
-      "name": "Run All Tests from Solution",
-      "value": ["ctrl+u l", "ctrl+u ctrl+l"]
+      "name": "Debug SetNextStatement",
+      "value": ["ctrl+shift+f10"]
     },
     {
-      "name": "Create New Session",
-      "value": ["ctrl+u n", "ctrl+u ctrl+n"]
+      "name": "Debug Start",
+      "value": ["f5"]
     },
     {
-      "name": "Append Tests to Session",
-      "value": ["ctrl+u a", "ctrl+u ctrl+a"]
+      "name": "Debug StartWithoutDebugging",
+      "value": ["ctrl+f5"]
     },
     {
-      "name": "Run Current Session",
-      "value": ["ctrl+u y", "ctrl+u ctrl+y"]
+      "name": "Debug StepInto",
+      "value": ["f11"]
     },
     {
-      "name": "Run Unit Tests under dotMemory Unit",
-      "value": ["ctrl+u m", "ctrl+u ctrl+m"]
+      "name": "Debug StepOut",
+      "value": ["shift+f11"]
     },
     {
-      "name": "Show Unit Tests window",
-      "value": ["alt+8", "shift+alt+8"]
+      "name": "Debug StopDebugging",
+      "value": ["shift+f5"]
     },
     {
-      "name": "Run Unit Tests (Tool Window)",
-      "value": ["shift+enter", "ctrl+r"]
+      "name": "Debug ToggleBreakpoint",
+      "value": ["f9"]
+    }
+  ],
+  "Edit": [
+    {
+      "name": "Edit BreakLine",
+      "value": ["enter", "shift+enter"]
     },
     {
-      "name": "Debug Unit Tests (Tool Window)",
-      "value": ["ctrl+d"]
+      "name": "Edit CollapseToDefinitions",
+      "value": ["ctrl+m ctrl+o"]
     },
     {
-      "name": "Run Current Session (Tool Window)",
-      "value": ["ctrl+y"]
+      "name": "Edit CommentSelection",
+      "value": ["ctrl+k ctrl+c"]
     },
     {
-      "name": "Rerun Failed Tests (Tool Window)",
+      "name": "Edit CompleteWord",
+      "value": ["alt+right", "ctrl+spacebar", "ctrl+k w", "ctrl+k ctrl+w"]
+    },
+    {
+      "name": "Edit Copy",
+      "value": ["ctrl+c", "ctrl+insert"]
+    },
+    {
+      "name": "Edit Cut",
+      "value": ["ctrl+x", "shift+delete"]
+    },
+    {
+      "name": "Edit Delete",
+      "value": ["delete", "shift+delete"]
+    },
+    {
+      "name": "Edit Find",
       "value": ["ctrl+f"]
     },
     {
-      "name": "Create New Session (Tool Window)",
-      "value": ["shift+alt+insert"]
+      "name": "Edit FindAllReferences",
+      "value": ["shift+f12"]
     },
     {
-      "name": "Append Tests to Session (Tool Window)",
-      "value": ["ctrl+alt+insert"]
+      "name": "Edit FindInFiles",
+      "value": ["ctrl+shift+f"]
     },
     {
-      "name": "Remove Selected Tests (Tool Window)",
-      "value": ["delete"]
+      "name": "Edit FindNext",
+      "value": ["f3"]
     },
     {
-      "name": "Run All Tests from Solution (Tool Window)",
+      "name": "Edit FindNextSelected",
+      "value": ["ctrl+f3"]
+    },
+    {
+      "name": "Edit FormatDocument",
+      "value": ["ctrl+k ctrl+d"]
+    },
+    {
+      "name": "Edit FormatSelection",
+      "value": ["ctrl+k ctrl+f"]
+    },
+    {
+      "name": "Edit GoTo",
+      "value": ["ctrl+g"]
+    },
+    {
+      "name": "Edit GoToDeclaration",
+      "value": ["ctrl+f12"]
+    },
+    {
+      "name": "Edit GoToDefinition",
+      "value": ["f12"]
+    },
+    {
+      "name": "Edit GoToFindCombo",
+      "value": ["ctrl+d"]
+    },
+    {
+      "name": "Edit GoToNextLocation",
+      "value": ["f8"]
+    },
+    {
+      "name": "Edit InsetSnipper",
+      "value": ["ctrl+k ctrl+x"]
+    },
+    {
+      "name": "Edit LineCut",
       "value": ["ctrl+l"]
+    },
+    {
+      "name": "Edit LineDownExtendColumn",
+      "value": ["shift+alt+down"]
+    },
+    {
+      "name": "Edit LineOpenAbove",
+      "value": ["ctrl+enter"]
+    },
+    {
+      "name": "Edit ListMembers",
+      "value": ["ctrl+j", "ctrl+k ctrl+l", "ctrl+k l"]
+    },
+    {
+      "name": "Edit NavigateTo",
+      "value": ["ctrl+,"]
+    },
+    {
+      "name": "Edit OpenFile",
+      "value": ["ctrl+shift+g"]
+    },
+    {
+      "name": "Edit OvertypMode",
+      "value": ["insert"]
+    },
+    {
+      "name": "Edit ParameterInfo",
+      "value": ["ctrl+shift+spacebar", "ctrl+k ctrl+p", "ctrl+k p"]
+    },
+    {
+      "name": "Edit paster",
+      "value": ["ctrl+v"]
+    },
+    {
+      "name": "Peek definition",
+      "value": ["alt+f12"]
+    },
+    {
+      "name": "Edit Redo",
+      "value": ["ctrl+y", "ctrl+shift+z", "shift+alt+backspace"]
+    },
+    {
+      "name": "Edit Replace",
+      "value": ["ctrl+h"]
+    },
+    {
+      "name": "Edit SelectAll",
+      "value": ["ctrl+a"]
+    },
+    {
+      "name": "Edit SelectCurrentWord",
+      "value": ["ctrl+w"]
+    },
+    {
+      "name": "Edit SelectionCancel",
+      "value": ["escape"]
+    },
+    {
+      "name": "Edit SourroundWith",
+      "value": ["ctrl+k ctrl+s"]
+    },
+    {
+      "name": "Edit TabLeft",
+      "value": ["shift+tab"]
+    },
+    {
+      "name": "Edit ToggleAllOutlining",
+      "value": ["ctrl+m ctrl+l"]
+    },
+    {
+      "name": "Edit ToggleBookmark",
+      "value": ["ctrl+k ctrl+k"]
+    },
+    {
+      "name": "Edit ToggleCompletionMode",
+      "value": ["ctrl+alt+space"]
+    },
+    {
+      "name": "Edit ToggleOutliningExpansion",
+      "value": ["ctrl+m ctrl+m"]
+    },
+    {
+      "name": "Edit UncommentSelection",
+      "value": ["ctrl+k ctrl+u"]
+    },
+    {
+      "name": "Edit Undo",
+      "value": ["ctrl+z", "alt+backspace"]
+    },
+    {
+      "name": "Edit WordDeleteToEnd",
+      "value": ["ctrl+delete"]
+    },
+    {
+      "name": "Edit WordDeleteToStart",
+      "value": ["ctrl+backspace"]
     }
   ],
-  "Tool windows": [
+  "File": [
     {
-      "name": "Build",
-      "value": ["alt+0"]
+      "name": "File Exit",
+      "value": ["alt+f4"]
     },
     {
-      "name": "Explorer",
-      "value": ["ctrl+alt+l", "alt+1"]
+      "name": "File NewFile",
+      "value": ["ctrl+n"]
     },
     {
-      "name": "Favorites",
-      "value": ["alt+2"]
+      "name": "File NewProject",
+      "value": ["ctrl+shift+n"]
     },
     {
-      "name": "Find",
-      "value": ["alt+3", "ctrl+alt+f12"]
+      "name": "File NewWebsite",
+      "value": ["shift+alt+n"]
     },
     {
-      "name": "Run",
-      "value": ["alt+4"]
+      "name": "File OpenFile",
+      "value": ["ctrl+o"]
     },
     {
-      "name": "Debug",
-      "value": ["alt+5"]
+      "name": "File OpenProject",
+      "value": ["ctrl+shift+o"]
     },
     {
-      "name": "TODO",
-      "value": ["alt+6"]
+      "name": "File OpenWebsite",
+      "value": ["shift+alt+o"]
     },
     {
-      "name": "NuGet",
-      "value": ["alt+7", "shift+alt+7"]
+      "name": "File Rename",
+      "value": ["f2"]
     },
     {
-      "name": "Unit Tests",
-      "value": ["alt+8", "shift+alt+8"]
+      "name": "File SaveAll",
+      "value": ["ctrl+shift+s"]
     },
     {
-      "name": "Commit",
-      "value": ["shift+alt+9"]
+      "name": "File SaveSelectedItems",
+      "value": ["ctrl+s"]
     },
     {
-      "name": "Repository",
-      "value": ["alt+9"]
+      "name": "File ViewInBrowser",
+      "value": ["ctrl+shift+w"]
+    }
+  ],
+  "Project": [
+    {
+      "name": "Project AddExistingItem",
+      "value": ["shift+alt+a"]
     },
     {
-      "name": "Terminal",
-      "value": ["ctrl+alt+1"]
+      "name": "Project AddNewItem",
+      "value": ["ctrl+shift+a"]
+    }
+  ],
+  "Refactor": [
+    {
+      "name": "Refactor ExtractMethod",
+      "value": ["ctrl+r ctrl+m"]
+    }
+  ],
+  "Tools": [
+    {
+      "name": "Tools AttachToProcess",
+      "value": ["ctrl+alt+p"]
+    }
+  ],
+  "View": [
+    {
+      "name": "View ClassView",
+      "value": ["ctrl+shift+c"]
     },
     {
-      "name": "Errors In Solution",
-      "value": ["ctrl+alt+2"]
+      "name": "View EditLabel",
+      "value": ["f2"]
     },
     {
-      "name": "Database",
-      "value": ["ctrl+alt+3"]
+      "name": "View ErrorList",
+      "value": ["ctrl+\\ ctrl+e", "ctrl+\\ e"]
     },
     {
-      "name": "Inspection Results",
-      "value": ["ctrl+alt+4", "ctrl+alt+v"]
+      "name": "View NavigateBackward",
+      "value": ["ctrl+-"]
+    },
+    {
+      "name": "View NavigateForward",
+      "value": ["ctrl+shift+-"]
+    },
+    {
+      "name": "View ObjectBrowser",
+      "value": ["ctrl+alt+j"]
+    },
+    {
+      "name": "View Output",
+      "value": ["ctrl+alt+o"]
+    },
+    {
+      "name": "View PropertiesWindow",
+      "value": ["f4"]
+    },
+    {
+      "name": "View Refresh",
+      "value": ["f5"]
+    },
+    {
+      "name": "View ServerExplorer",
+      "value": ["ctrl+alt+s"]
+    },
+    {
+      "name": "View ShowSmartTag",
+      "value": ["ctrl+.", "shift+alt+f10"]
+    },
+    {
+      "name": "View SolutionExplorer",
+      "value": ["ctrl+alt+l"]
+    },
+    {
+      "name": "View TfsTeamExplorer",
+      "value": ["ctrl+\\ ctrl+m"]
+    },
+    {
+      "name": "View Toolbox",
+      "value": ["ctrl+alt+x"]
+    },
+    {
+      "name": "View ViewCode",
+      "value": ["enter", "f7"]
+    },
+    {
+      "name": "View ViewDesigner",
+      "value": ["shift+f7"]
+    }
+  ],
+  "Window": [
+    {
+      "name": "Window ActivateDocumentWindow",
+      "value": ["escape"]
+    },
+    {
+      "name": "Window CloseDocumentWindow",
+      "value": ["ctrl+f4"]
+    },
+    {
+      "name": "Window NextDocumentWindow",
+      "value": ["ctrl+f6"]
+    },
+    {
+      "name": "Window NextDocumentWindowNav",
+      "value": ["ctrl+tab"]
+    },
+    {
+      "name": "Window NextSplitPane",
+      "value": ["f6"]
     }
   ]
 }
