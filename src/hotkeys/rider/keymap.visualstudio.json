@@ -1,5 +1,5 @@
 {
-  "Top": [
+  "Top keyboard shortcuts": [
     {
       "name": "Open Solution or Project",
       "value": ["ctrl+shift+o"]
@@ -390,7 +390,7 @@
     },
     {
       "name": "Basic Completion",
-      "value": ["ctrl+Space", "ctrl+j"]
+      "value": ["ctrl+space", "ctrl+j"]
     },
     {
       "name": "Smart Completion",
@@ -618,7 +618,7 @@
     },
     {
       "name": "Safe Delete",
-      "value": ["ctrl+r d", "ctrl+r ctrl+d", "alt+Delete"]
+      "value": ["ctrl+r d", "ctrl+r ctrl+d", "alt+delete"]
     }
   ],
   "Global VCS actions": [

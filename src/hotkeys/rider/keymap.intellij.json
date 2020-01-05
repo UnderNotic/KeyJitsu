@@ -1,8 +1,746 @@
 {
-  "Top": [
+  "Top keyboard shortcuts": [
     {
       "name": "Open Solution or Project",
       "value": ["ctrl+shift+o"]
+    },
+    {
+      "name": "Show Action List",
+      "value": ["alt+enter"]
+    },
+    {
+      "name": "Search Everywhere",
+      "value": ["shift shift"]
+    },
+    {
+      "name": "Navigate To…",
+      "value": ["ctrl+shift+g"]
+    },
+    {
+      "name": "Find Usages",
+      "value": ["alt+f7"]
+    },
+    {
+      "name": "Select In",
+      "value": ["alt+f1"]
+    },
+    {
+      "name": "Settings",
+      "value": ["ctrl+alt+s"]
+    },
+    {
+      "name": "Find Action",
+      "value": ["ctrl+shift+a"]
+    },
+    {
+      "name": "Generate",
+      "value": ["alt+insert"]
+    },
+    {
+      "name": "Build Solution",
+      "value": ["ctrl+f9"]
+    },
+    {
+      "name": "Debug",
+      "value": ["shift+alt+f9"]
+    },
+    {
+      "name": "View Breakpoints",
+      "value": ["ctrl+shift+f8"]
+    },
+    {
+      "name": "Attach to Process",
+      "value": ["ctrl+alt+F5"]
+    },
+    {
+      "name": "VCS Operations Popup",
+      "value": ["alt+`"]
+    },
+    {
+      "name": "Refactor This",
+      "value": ["ctrl+shift+alt+t"]
+    },
+    {
+      "name": "Inspect This",
+      "value": ["ctrl+shift+alt+a"]
+    }
+  ],
+  "Finding everything": [
+    {
+      "name": "Search Everywhere",
+      "value": ["shift shift"]
+    },
+    {
+      "name": "Find",
+      "value": ["ctrl+f", "alt+f3"]
+    },
+    {
+      "name": "Find Next / Move to Next Occurrence",
+      "value": ["f3", "ctrl+l"]
+    },
+    {
+      "name": "Find Previous / Move to Previous Occurrence",
+      "value": ["shift+f3", "ctrl+shift+l"]
+    },
+    {
+      "name": "Replace",
+      "value": ["ctrl+r"]
+    },
+    {
+      "name": "Find in Path",
+      "value": ["ctrl+shift+f"]
+    },
+    {
+      "name": "Replace in Path",
+      "value": ["ctrl+shift+r"]
+    },
+    {
+      "name": "Find Word at Caret",
+      "value": ["ctrl+f3"]
+    },
+    {
+      "name": "File",
+      "value": ["ctrl+shift+n"]
+    },
+    {
+      "name": "File Member",
+      "value": ["ctrl+f12"]
+    },
+    {
+      "name": "Symbol",
+      "value": ["ctrl+shift+alt+n"]
+    },
+    {
+      "name": "Find Action",
+      "value": ["ctrl+shift+a"]
+    }
+  ],
+  "Navigating from symbols": [
+    {
+      "name": "Declaration or Usages",
+      "value": ["ctrl+b"]
+    },
+    {
+      "name": "Type Declaration",
+      "value": ["ctrl+shift+b"]
+    },
+    {
+      "name": "Show Usages",
+      "value": ["ctrl+alt+f7"]
+    },
+    {
+      "name": "Super Method",
+      "value": ["ctrl+u"]
+    },
+    {
+      "name": "Implementation(s)",
+      "value": ["ctrl+alt+b"]
+    },
+    {
+      "name": "Navigate To…",
+      "value": ["cltr+shift+g"]
+    },
+    {
+      "name": "Find Usages",
+      "value": ["alt+f7"]
+    },
+    {
+      "name": "Highlight Usages in File",
+      "value": ["ctrl+shift+f7"]
+    }
+  ],
+  "Context navigation": [
+    {
+      "name": "Move Caret to Code Block Start",
+      "value": ["ctrl+["]
+    },
+    {
+      "name": "Next Method",
+      "value": ["alt+down"]
+    },
+    {
+      "name": "Previous Method",
+      "value": ["alt+up"]
+    },
+    {
+      "name": "Line/Column...",
+      "value": ["ctrl+g"]
+    },
+    {
+      "name": "Switcher",
+      "value": ["ctrl+tab", "ctrl+shift+tab"]
+    },
+    {
+      "name": "Select In...",
+      "value": ["alt+f1"]
+    },
+    {
+      "name": "Recent Files",
+      "value": ["ctrl+e"]
+    },
+    {
+      "name": "Last Edit Location",
+      "value": ["ctrl+shift+backspace"]
+    },
+    {
+      "name": "Back",
+      "value": ["ctrl+alt+left"]
+    },
+    {
+      "name": "Forward",
+      "value": ["ctrl+alt+right"]
+    },
+    {
+      "name": "Select Next Tab",
+      "value": ["alt+right"]
+    },
+    {
+      "name": "Select Previous Tab",
+      "value": ["alt+left"]
+    },
+    {
+      "name": "Add to Favorites",
+      "value": ["shift+alt+f"]
+    },
+    {
+      "name": "Show Structure window",
+      "value": ["alt+f7"]
+    },
+    {
+      "name": "Show Find window",
+      "value": ["alt+f7"]
+    },
+    {
+      "name": "Show TODO window",
+      "value": ["alt+6"]
+    },
+    {
+      "name": "Show Favorites window",
+      "value": ["alt+2"]
+    }
+  ],
+  "Code Analysis": [
+    {
+      "name": "Show Action List",
+      "value": ["alt+enter"]
+    },
+    {
+      "name": "Next Code Issue",
+      "value": ["f2"]
+    },
+    {
+      "name": "Previous Code Issue",
+      "value": ["shift+f2"]
+    },
+    {
+      "name": "Next Error",
+      "value": ["alt+f2"]
+    },
+    {
+      "name": "Previous Error",
+      "value": ["shift+alt+f2"]
+    },
+    {
+      "name": "Toggle Code Inspection",
+      "value": ["ctrl+shift+alt+8"]
+    },
+    {
+      "name": "Run Inspection by Name",
+      "value": ["ctrl+shift+alt+i"]
+    },
+    {
+      "name": "Inspect This...",
+      "value": ["ctrl+shift+alt+a"]
+    }
+  ],
+  "Creating and editing code": [
+    {
+      "name": "Select All",
+      "value": ["ctrl+a"]
+    },
+    {
+      "name": "Move Caret to Previous Word with Selection",
+      "value": ["ctrl+shift+left"]
+    },
+    {
+      "name": "Move Caret to Next Word with Selection",
+      "value": ["ctrl+shift+right"]
+    },
+    {
+      "name": "Move Caret to Page Top with Selection",
+      "value": ["ctrl+shift+Page Up"]
+    },
+    {
+      "name": "Move Caret to Page Bottom with Selection",
+      "value": ["ctrl+shift+Page Down"]
+    },
+    {
+      "name": "Extend Selection",
+      "value": ["ctrl+w"]
+    },
+    {
+      "name": "Shrink Selection",
+      "value": ["ctrl+shift+w"]
+    },
+    {
+      "name": "Add Selection for Next Occurrence",
+      "value": ["alt+j"]
+    },
+    {
+      "name": "Copy",
+      "value": ["ctrl+c", "ctrl+insert"]
+    },
+    {
+      "name": "Cut",
+      "value": ["ctrl+x", "shift+delete"]
+    },
+    {
+      "name": "Paste",
+      "value": ["ctrl+v", "shift+insert"]
+    },
+    {
+      "name": "Paste without Formatting",
+      "value": ["ctrl+shift+alt+v"]
+    },
+    {
+      "name": "Paste from History...",
+      "value": ["ctrl+shift+v ctrl+shift+insert"]
+    },
+    {
+      "name": "Duplicate Line or Selection",
+      "value": ["ctrl+d"]
+    },
+    {
+      "name": "Copy Paths",
+      "value": ["ctrl+shift+c"]
+    },
+    {
+      "name": "Save All",
+      "value": ["ctrl+s"]
+    },
+    {
+      "name": "Undo",
+      "value": ["ctrl+z", "alt+backspace"]
+    },
+    {
+      "name": "Indent Selection",
+      "value": ["tab"]
+    },
+    {
+      "name": "Unindent Line or Selection",
+      "value": ["shift+tab"]
+    },
+    {
+      "name": "Move Line Up",
+      "value": ["shift+alt+up"]
+    },
+    {
+      "name": "Move Line Down",
+      "value": ["shift+alt+down"]
+    },
+    {
+      "name": "Start New Line",
+      "value": ["shift+enter"]
+    },
+    {
+      "name": "Start New Line Before Current",
+      "value": ["ctrl+alt+enter"]
+    },
+    {
+      "name": "Delete Line",
+      "value": ["ctrl+y"]
+    },
+    {
+      "name": "Toggle Case",
+      "value": ["ctrl+shift+u"]
+    },
+    {
+      "name": "New Scratch File",
+      "value": ["ctrl+shift+alt+insert"]
+    }
+  ],
+  "Coding assistance": [
+    {
+      "name": "Show Action List",
+      "value": ["alt+enter"]
+    },
+    {
+      "name": "Basic Completion",
+      "value": ["ctrl+space"]
+    },
+    {
+      "name": "Smart Completion",
+      "value": ["ctrl+shift+space"]
+    },
+    {
+      "name": "Second Basic Completion",
+      "value": ["ctrl+alt+space"]
+    },
+    {
+      "name": "Complete Current Statement",
+      "value": ["ctrl+shift+enter"]
+    },
+    {
+      "name": "Parameter Info",
+      "value": ["ctrl+p"]
+    },
+    {
+      "name": "Quick Documentation",
+      "value": ["ctrl+q"]
+    },
+    {
+      "name": "Move Statement Up",
+      "value": ["ctrl+shift+up"]
+    },
+    {
+      "name": "Move Statement Down",
+      "value": ["ctrl+shift+down"]
+    },
+    {
+      "name": "Move Statement Left",
+      "value": ["ctrl+shift+alt+left"]
+    },
+    {
+      "name": "Move Statement Right",
+      "value": ["ctrl+shift+alt+right"]
+    },
+    {
+      "name": "Comment/uncomment with Line Comment",
+      "value": ["ctrl+/", "ctrl+NumPad /"]
+    },
+    {
+      "name": "Comment/uncomment with Block Comment",
+      "value": ["ctrl+shift+/", "ctrl+shift+NumPad /"]
+    },
+    {
+      "name": "Generate...",
+      "value": ["alt+insert"]
+    }
+  ],
+  "Building, Running, and Debugging": [
+    {
+      "name": "Build Solution",
+      "value": ["ctrl+f9"]
+    },
+    {
+      "name": "Run context configuration",
+      "value": ["ctrl+shift+f10"]
+    },
+    {
+      "name": "Run...",
+      "value": ["shift+alt+f10"]
+    },
+    {
+      "name": "Debug context configuration",
+      "value": ["shift+f9"]
+    },
+    {
+      "name": "Debug...",
+      "value": ["shift+alt+f9"]
+    },
+    {
+      "name": "Attach to Process...",
+      "value": ["ctrl+alt+f5"]
+    },
+    {
+      "name": "Stop",
+      "value": ["ctrl+f2"]
+    },
+    {
+      "name": "Stop Background Processes...",
+      "value": ["ctrl+shift+f2"]
+    },
+    {
+      "name": "Step Over",
+      "value": ["f8"]
+    },
+    {
+      "name": "Force Step Over",
+      "value": ["shift+alt+f8"]
+    },
+    {
+      "name": "Step Into",
+      "value": ["f7"]
+    },
+    {
+      "name": "Smart Step Into",
+      "value": ["shift+f7"]
+    },
+    {
+      "name": "Force Step Into",
+      "value": ["shift+alt+f7"]
+    },
+    {
+      "name": "Step Out",
+      "value": ["shift+f8"]
+    },
+    {
+      "name": "Run to Cursor",
+      "value": ["alt+f9"]
+    },
+    {
+      "name": "Force Run to Cursor",
+      "value": ["ctrl+alt+f9"]
+    },
+    {
+      "name": "Jump to Statement",
+      "value": ["ctrl+shift+alt+f9"]
+    },
+    {
+      "name": "Resume Program",
+      "value": ["f9"]
+    },
+    {
+      "name": "Evaluate Expression...",
+      "value": ["alt+f8"]
+    },
+    {
+      "name": "Quick Evaluate Expression",
+      "value": ["ctrl+alt+f8"]
+    },
+    {
+      "name": "Show Execution Point",
+      "value": ["alt+f10"]
+    },
+    {
+      "name": "Toggle Line Breakpoint",
+      "value": ["ctrl+f8"]
+    },
+    {
+      "name": "Toggle Temporary Line Breakpoint",
+      "value": ["ctrl+shift+alt+f8"]
+    },
+    {
+      "name": "Toggle Breakpoint Enabled",
+      "value": ["ctrl+f9"]
+    },
+    {
+      "name": "View Breakpoints...",
+      "value": ["ctrl+shift+f8"]
+    },
+    {
+      "name": "Edit breakpoint",
+      "value": ["ctrl+shift+f8"]
+    },
+    {
+      "name": "Show Build window",
+      "value": ["alt+0"]
+    },
+    {
+      "name": "Show Run window",
+      "value": ["alt+4"]
+    },
+    {
+      "name": "Show Debug window",
+      "value": ["alt+5"]
+    }
+  ],
+  "Refactorings": [
+    {
+      "name": "Refactor This",
+      "value": ["ctrl+shift+alt+t"]
+    },
+    {
+      "name": "Change Signature",
+      "value": ["ctrl+f6"]
+    },
+    {
+      "name": "Inline",
+      "value": ["ctrl+alt+n"]
+    },
+    {
+      "name": "Move",
+      "value": ["f6"]
+    },
+    {
+      "name": "Extract Method",
+      "value": ["ctrl+alt+m"]
+    },
+    {
+      "name": "Introduce Field",
+      "value": ["ctrl+alt+f"]
+    },
+    {
+      "name": "Introduce Parameter",
+      "value": ["ctrl+alt+p"]
+    },
+    {
+      "name": "Introduce Variable",
+      "value": ["ctrl+alt+v"]
+    },
+    {
+      "name": "Rename",
+      "value": ["shift+f6"]
+    },
+    {
+      "name": "Safe Delete",
+      "value": ["alt+delete"]
+    }
+  ],
+  "Global VCS actions": [
+    {
+      "name": "VCS Operations Popup",
+      "value": ["alt+`"]
+    },
+    {
+      "name": "Show Commit window",
+      "value": ["shift+alt+9"]
+    },
+    {
+      "name": "Show Repository window",
+      "value": ["alt+9"]
+    },
+    {
+      "name": "Commit",
+      "value": ["ctrl+k"]
+    },
+    {
+      "name": "Update Project",
+      "value": ["ctrl+t"]
+    },
+    {
+      "name": "Rollback",
+      "value": ["ctrl+alt+z"]
+    },
+    {
+      "name": "Push",
+      "value": ["ctrl+shift+k"]
+    },
+    {
+      "name": "Next Change",
+      "value": ["ctrl+shift+alt+down"]
+    },
+    {
+      "name": "Previous Change",
+      "value": ["ctrl+shift+alt+up"]
+    }
+  ],
+  "Unit Testing": [
+    {
+      "name": "Unit Testing Quick List",
+      "value": ["shift+alt+u"]
+    },
+    {
+      "name": "Run Unit Tests",
+      "value": ["ctrl+; r", "ctrl+; ctrl+r"]
+    },
+    {
+      "name": "Debug Unit Tests",
+      "value": ["ctrl+; d", "ctrl+; ctrl+d"]
+    },
+    {
+      "name": "Stop Execution",
+      "value": ["ctrl+; s", "ctrl+; ctrl+s"]
+    },
+    {
+      "name": "Repeat Previous Run",
+      "value": ["ctrl+; t", "ctrl+; ctrl+t"]
+    },
+    {
+      "name": "Rerun Failed Tests",
+      "value": ["ctrl+; f", "ctrl+; ctrl+f"]
+    },
+    {
+      "name": "Repeat Tests Until Failure",
+      "value": ["ctrl+; w", "ctrl+; ctrl+w"]
+    },
+    {
+      "name": "Run All Tests from Solution",
+      "value": ["ctrl+; l", "ctrl+; ctrl+l"]
+    },
+    {
+      "name": "Create New Session",
+      "value": ["ctrl+; n", "ctrl+; ctrl+n"]
+    },
+    {
+      "name": "Append Tests to Session",
+      "value": ["ctrl+; a", "ctrl+; ctrl+a"]
+    },
+    {
+      "name": "Run Current Session",
+      "value": ["ctrl+; y", "ctrl+; ctrl+y"]
+    },
+    {
+      "name": "Run Unit Tests under dotMemory Unit",
+      "value": ["ctrl+; m", "ctrl+; ctrl+m"]
+    },
+    {
+      "name": "Run Unit Tests (Tool Window)",
+      "value": ["shift+enter", "ctrl+r"]
+    },
+    {
+      "name": "Debug Unit Tests (Tool Window)",
+      "value": ["ctrl+d"]
+    },
+    {
+      "name": "Run Current Session (Tool Window)",
+      "value": ["ctrl+y"]
+    },
+    {
+      "name": "Rerun Failed Tests (Tool Window)",
+      "value": ["ctrl+f"]
+    },
+    {
+      "name": "Create New Session (Tool Window)",
+      "value": ["shift+alt+insert"]
+    },
+    {
+      "name": "Append Tests to Session (Tool Window)",
+      "value": ["ctrl+alt+insert"]
+    },
+    {
+      "name": "Remove Selected Tests (Tool Window)",
+      "value": ["delete"]
+    },
+    {
+      "name": "Run All Tests from Solution (Tool Window)",
+      "value": ["ctrl+l"]
+    }
+  ],
+  "Tool windows": [
+    {
+      "name": "Build",
+      "value": ["alt+0"]
+    },
+    {
+      "name": "Explorer",
+      "value": ["alt+1"]
+    },
+    {
+      "name": "Favorites",
+      "value": ["alt+2"]
+    },
+    {
+      "name": "Find",
+      "value": ["alt+3"]
+    },
+    {
+      "name": "Run",
+      "value": ["alt+4"]
+    },
+    {
+      "name": "Debug",
+      "value": ["alt+5"]
+    },
+    {
+      "name": "TODO",
+      "value": ["alt+6"]
+    },
+    {
+      "name": "Commit",
+      "value": ["shift+alt+9"]
+    },
+    {
+      "name": "Repository",
+      "value": ["alt+9"]
+    },
+    {
+      "name": "Terminal",
+      "value": ["alt+f12"]
+    },
+    {
+      "name": "Structure",
+      "value": ["alt+7"]
     }
   ]
 }
