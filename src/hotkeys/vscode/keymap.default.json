@@ -235,8 +235,98 @@
       "value": ["alt+w"]
     }
   ],
-  "Multi-cursor and selection": [],
-  "Rich languages editing": [],
+  "Multi-cursor and selection": [
+    {
+      "name": "Insert cursor above",
+      "value": ["ctrl+alt+up"]
+    },
+    {
+      "name": "Insert cursor below",
+      "value": ["ctrl+alt+down"]
+    },
+    {
+      "name": "Undo last cursor operation",
+      "value": ["ctrl+u"]
+    },
+    {
+      "name": "Insert cursor at end of each line selected",
+      "value": ["shift+alt+i"]
+    },
+    {
+      "name": "Select current line",
+      "value": ["ctrl+l"]
+    },
+    {
+      "name": "Select all occurrences of current selection",
+      "value": ["ctrl+shift+l s"]
+    },
+    {
+      "name": "Select all occurrences of current word",
+      "value": ["ctrl+f2"]
+    },
+    {
+      "name": "Expand selection",
+      "value": ["shift+alt+right"]
+    },
+    {
+      "name": "Shrink selection",
+      "value": ["shift+alt+left"]
+    },
+    {
+      "name": "Column (box) selection",
+      "value": ["ctrl+shift+alt"]
+    }
+  ],
+  "Rich languages editing": [
+    {
+      "name": "Trigger suggestion",
+      "value": ["ctrl+space"]
+    },
+    {
+      "name": "Trigger parameter hints",
+      "value": ["ctrl+shift+space"]
+    },
+    {
+      "name": "Format document",
+      "value": ["shift+alt+f"]
+    },
+    {
+      "name": "Format selection",
+      "value": ["ctrl+k ctrl+f"]
+    },
+    {
+      "name": "Go to Definition",
+      "value": ["f12"]
+    },
+    {
+      "name": "Peek Definition",
+      "value": ["alt+f12"]
+    },
+    {
+      "name": "Open Definition to the side",
+      "value": ["ctrl+k f12"]
+    },
+    {
+      "name": "Quick Fix",
+      "value": ["ctrl+."]
+    },
+    {
+      "name": "Show References",
+      "value": ["shift+f12"]
+    },
+    {
+      "name": "Rename Symbol",
+      "value": ["f2"]
+    },
+    {
+      "name": "Trim trailing whitespace",
+      "value": ["ctrl+k ctrl+x"]
+    },
+    {
+      "name": "change file language",
+      "value": ["ctrl+k m"]
+    }
+  ],
   "File management": [
     {
       "name": "New File",
@@ -295,7 +385,138 @@
       "value": ["ctrl+k o"]
     }
   ],
-  "Display": [],
-  "Debug": [],
-  "Integrated terminal": []
+  "Display": [
+    {
+      "name": "Toggle full screen",
+      "value": ["f11"]
+    },
+    {
+      "name": "Toggle editor layout (horizontal/vertical)",
+      "value": ["shift+alt+0"]
+    },
+    {
+      "name": "Zoom in",
+      "value": ["ctrl+="]
+    },
+    {
+      "name": "Zoom out",
+      "value": ["Ctrl+-"]
+    },
+    {
+      "name": "Toggle Sidebar visibility",
+      "value": ["ctrl+b"]
+    },
+    {
+      "name": "Show Explorer / Toggle focus",
+      "value": ["ctrl+shift+e"]
+    },
+    {
+      "name": "Show Search",
+      "value": ["ctrl+shift+f"]
+    },
+    {
+      "name": "Show Source Control",
+      "value": ["ctrl+shift+g"]
+    },
+    {
+      "name": "Show Debug",
+      "value": ["ctrl+shift+d"]
+    },
+    {
+      "name": "Show Extensions",
+      "value": ["ctrl+shift+x"]
+    },
+    {
+      "name": "Replace in files",
+      "value": ["ctrl+shift+h"]
+    },
+    {
+      "name": "Toggle Search details",
+      "value": ["ctrl+shift+j"]
+    },
+    {
+      "name": "Show Output panel",
+      "value": ["ctrl+shift+u"]
+    },
+    {
+      "name": "Open Markdown preview",
+      "value": ["ctrl+shift+v"]
+    },
+    {
+      "name": "Open Markdown preview to the",
+      "value": ["ctrl+k v"]
+    }
+  ],
+  "Debug": [
+    {
+      "name": "Toggle breakpoint",
+      "value": ["f9"]
+    },
+    {
+      "name": "Start/Continue",
+      "value": ["f5"]
+    },
+    {
+      "name": "Stop",
+      "value": ["shift+f5"]
+    },
+    {
+      "name": "Step into",
+      "value": ["f11"]
+    },
+    {
+      "name": "Step out",
+      "value": ["shift+f11"]
+    },
+    {
+      "name": "Step over",
+      "value": ["f10"]
+    },
+    {
+      "name": "Show hover",
+      "value": ["ctrl+k ctrl+i"]
+    }
+  ],
+  "Integrated terminal": [
+    {
+      "name": "Show integrated terminal",
+      "value": ["ctrl+`"]
+    },
+    {
+      "name": "Create new terminal",
+      "value": ["ctrl+shift+`"]
+    },
+    {
+      "name": "Copy selection",
+      "value": ["ctrl+c"]
+    },
+    {
+      "name": "Paste into active terminal",
+      "value": ["ctrl+v"]
+    },
+    {
+      "name": "Scroll up",
+      "value": ["ctrl+up"]
+    },
+    {
+      "name": "Scroll down",
+      "value": ["ctrl+down"]
+    },
+    {
+      "name": "Scroll page up",
+      "value": ["shift+pgup"]
+    },
+    {
+      "name": "Scroll page down",
+      "value": ["shift+pgdn"]
+    },
+    {
+      "name": "Scroll to top",
+      "value": ["ctrl+home "]
+    },
+    {
+      "name": " Scroll to bottom",
+      "value": ["ctrl+end"]
+    }
+  ]
 }
