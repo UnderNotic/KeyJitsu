@@ -504,11 +504,11 @@
     },
     {
       "name": "Scroll page up",
-      "value": ["shift+pgup"]
+      "value": ["shift+pageup"]
     },
     {
       "name": "Scroll page down",
-      "value": ["shift+pgdn"]
+      "value": ["shift+pagedown"]
     },
     {
       "name": "Scroll to top",

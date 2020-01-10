@@ -84,11 +84,11 @@
     },
     {
       "name": "Find Next / Move to Next Occurrence",
-      "value": ["f3", "ctrl+shift+down", "ctrl+alt+Page Down"]
+      "value": ["f3", "ctrl+shift+down", "ctrl+alt+pagedown"]
     },
     {
       "name": "Find Previous / Move to Previous Occurrence",
-      "value": ["shift+f3", "ctrl+shift+up", "ctrl+alt+page up"]
+      "value": ["shift+f3", "ctrl+shift+up", "ctrl+alt+pageup"]
     },
     {
       "name": "Replace",
@@ -242,19 +242,19 @@
     },
     {
       "name": "Next Code Issue",
-      "value": ["alt+Page Down"]
+      "value": ["alt+pagedown"]
     },
     {
       "name": "Previous Code Issue",
-      "value": ["alt+Page Up"]
+      "value": ["alt+pageup"]
     },
     {
       "name": "Next Error",
-      "value": ["shift+alt+Page Down"]
+      "value": ["shift+alt+pagedown"]
     },
     {
       "name": "Previous Error",
-      "value": ["shift+alt+Page Up"]
+      "value": ["shift+alt+pageup"]
     },
     {
       "name": "Toggle Code Inspection",
@@ -292,11 +292,11 @@
     },
     {
       "name": "Move Caret to Page Top with Selection",
-      "value": ["ctrl+shift+Page Up"]
+      "value": ["ctrl+shift+pageup"]
     },
     {
       "name": "Move Caret to Page Bottom with Selection",
-      "value": ["ctrl+shift+Page Down"]
+      "value": ["ctrl+shift+pagedown"]
     },
     {
       "name": "Extend Selection",

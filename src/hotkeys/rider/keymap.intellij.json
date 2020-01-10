@@ -268,11 +268,11 @@
     },
     {
       "name": "Move Caret to Page Top with Selection",
-      "value": ["ctrl+shift+Page Up"]
+      "value": ["ctrl+shift+pageup"]
     },
     {
       "name": "Move Caret to Page Bottom with Selection",
-      "value": ["ctrl+shift+Page Down"]
+      "value": ["ctrl+shift+pagedown"]
     },
     {
       "name": "Extend Selection",
