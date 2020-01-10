@@ -6,6 +6,7 @@
     "bootstrap": "^4.3.1",
     "bootswatch": "^4.3.1",
     "hotkeys-js": "^3.7.2",
+    "jquery": "^3.4.1",
     "keycode": "^2.2.0",
     "npm": "^6.13.0",
     "react": "^16.10.2",
