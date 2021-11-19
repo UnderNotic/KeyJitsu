@@ -1,5 +1,5 @@
 # <img alt="katana" src="https://raw.githubusercontent.com/undernotic/KeyJitsu/master/src/common/assets/katana/katana_logo.png">
-[keyjitsu.space](https://keyjitsu.space)   
+[https://keyjitsu.netlify.app](https://keyjitsu.netlify.app/)   
 Quickly Learn Essential Keyboard Shortcuts
 
 ## Contribute
